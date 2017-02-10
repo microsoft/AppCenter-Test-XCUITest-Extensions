@@ -97,37 +97,44 @@ When you're all done, your build settings should resemble the following:
 
 # Usage
 
-The `VSMobileCenterExtensions` framework exposes a `label()` function that you can use to 
+The `VSMobileCenterExtensions` framework exposes a `label` functionality that you can use to 
 trigger a screenshot and mark a particular point in your UI Test with a label of your choosing. 
 
 ### Objective-C
+
+In Objective-C, the method is called `+[MCLabel label:]` or `label()` for short. 
+It accepts a format string and arguments just like `NSLog()`:
+
 ```objective-c
 #import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
 
 - (void)myTest {
-    //...
+    //Some test logic....
   
     [MCLabel label:fmt, args ... ];
     // or
     label(fmt, ...);
 
-    //...
+    //More test logic...
 }
 ```
 
 ### Swift
+In Swift the function is called `MCLabel.labelStep()` and it accepts a string, and an optional
+`vaList` if you want to use an Objective-C `NSLog()` style format string:
+
 ```swift
 import VSMobileCenterExtensions
 
 
 class MyTestCase: XCTestCase {
     func myTestCase() {
-        //...
+        //Some test logic...
 
-        MCLabel.labelStep(message)
+        MCLabel.labelStep(label)
         MCLabel.labelStep(fmt, args: getVaList([ args, ... ]))
 
-        //...
+        //More test logic...
     }
 }
 ```
