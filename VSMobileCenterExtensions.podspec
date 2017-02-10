@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'VSMobileCenterExtensions'
-  s.version      = '0.0.1'
+  s.version      = `cat version.txt`.chomp
   s.license      = { :type => 'MIT' } 
   s.homepage     = 'https://github.com/xamarinhq/test-cloud-xcuitest-extensions'
   s.authors      = { 'Chris Fuentes' => 'chfuen@microsoft.com' }
