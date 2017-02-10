@@ -1,5 +1,13 @@
-# test-cloud-xcuitest-extensions
+# VXMobileCenterExtensions
 An extension library for to provided added value when running XCUITest tests in Visual Studio Mobile Center and Xamarin Test Cloud
+
+- [Installation](#installation)
+  - [Cocoapods](#cocoapods)
+  - [Carthage](#carthage)
+  - [Build from source](#building-from-source)
+- [Usage](#usage)
+  - [Objective-C](#objective-c)
+  - [Swift](#swift)
 
 # Installation
 
@@ -92,7 +100,7 @@ When you're all done, your build settings should resemble the following:
 The `VSMobileCenterExtensions` framework exposes a `label()` function that you can use to 
 trigger a screenshot and mark a particular point in your UI Test with a label of your choosing. 
 
-In Objective-C:
+### Objective-C
 ```objective-c
 #import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
 
@@ -107,7 +115,7 @@ In Objective-C:
 }
 ```
 
-Swift:
+### Swift
 ```swift
 import VSMobileCenterExtensions
 
