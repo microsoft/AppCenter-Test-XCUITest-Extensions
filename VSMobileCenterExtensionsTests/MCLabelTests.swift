@@ -1,6 +1,6 @@
 
 import XCTest
-import XCUITestExtensions
+import VSMobileCenterExtensions
 
 class MCLabelTests: XCTestCase {
     func testLabel() {

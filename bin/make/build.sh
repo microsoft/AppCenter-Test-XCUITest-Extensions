@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
-if [ "`which xcpretty`" != '' ]; then
-  xcodebuild | xcpretty
-else
-  xcodebuild
+set -e
+
+if [ ! -z "${VERBOSE}" ]; then
+  set -x
 fi
+
+if [ "`which xcpretty`" != '' ]; then
+  xcodebuild -configuration Release | xcpretty
+else
+  xcodebuild -configuration Release
+fi
+

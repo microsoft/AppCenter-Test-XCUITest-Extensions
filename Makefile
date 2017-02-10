@@ -11,3 +11,6 @@ clean:
 
 build:
 	bin/make/build.sh
+
+pod-lint:
+	bin/make/pod_lint.sh

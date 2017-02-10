@@ -1,6 +1,6 @@
 
 #import <XCTest/XCTest.h>
-#import "XCUITestExtensions.h"
+#import "VSMobileCenterExtensions.h"
 
 @interface MCLabelTests : XCTestCase
 
