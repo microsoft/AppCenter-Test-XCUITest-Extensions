@@ -111,7 +111,7 @@ It accepts a format string and arguments just like `NSLog()`:
 - (void)myTest {
     //Some test logic....
   
-    [MCLabel label:fmt, args ... ];
+    [MCLabel label:fmt, ... ];
     // or
     label(fmt, ...);
 
@@ -121,18 +121,18 @@ It accepts a format string and arguments just like `NSLog()`:
 
 ### Swift
 In Swift the function is called `MCLabel.labelStep()` and it accepts a string, and an optional
-`vaList` if you want to use an Objective-C `NSLog()` style format string:
+`vaList` if you want to use an Objective-C `NSLog()`-style format string:
 
 ```swift
 import VSMobileCenterExtensions
-
 
 class MyTestCase: XCTestCase {
     func myTestCase() {
         //Some test logic...
 
         MCLabel.labelStep(label)
-        MCLabel.labelStep(fmt, args: getVaList([ args, ... ]))
+        //or
+        MCLabel.labelStep(fmt, args: getVaList([ ... ]))
 
         //More test logic...
     }
