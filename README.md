@@ -95,7 +95,7 @@ Click 'Add Other...' and navigate to the framework:
 **Make sure that the 'Copy Files' phase's destination
 is set to 'Frameworks'.**
  
-When you're all done, your build settings should resemble the following:
+When you're all done, your Build Phases pane should resemble the following:
 
 <img width="874" alt="buildsettings" src="https://cloud.githubusercontent.com/assets/3009852/22831239/82f297bc-ef5e-11e6-96aa-46b00b2bbd8e.png">
 
