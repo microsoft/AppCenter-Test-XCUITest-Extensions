@@ -31,7 +31,31 @@ $ pod install
 
 ## Carthage 
 
-`//TODO`
+1. First ensure you have `carthage` available by running
+```shell
+$ brew install carthage
+```
+(If you don't have homebrew, you can get it [here](http://brew.sh/))
+
+2. Create a `Cartfile` with the following contents:
+
+```
+github "xamarinhq/test-cloud-xcuitest-extensions"
+```
+
+3. Run
+```shell
+$ carthage bootstrap
+```
+
+This will build the framework and install it into `Carthage/Build/iOS/VSMobileCenterExtensions.framework`
+
+4. In Xcode, in the 'Build Phases' tab of your _UI Test target_ (not your main application target), 
+add the `VSMobileCenterExtensions.framework` that you just built in the 'Link Binary With Libraries' phase.
+
+5. In the same tab, also add the `VSMobileCenterExtensions.framework` to your 'Copy Files' phase. 
+You may need to create one if you don't already have one. Make sure that the 'Copy Files' phase's destination 
+is set to 'Frameworks'.  
 
 ## Building from source
 
