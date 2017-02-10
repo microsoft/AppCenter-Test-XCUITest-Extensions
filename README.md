@@ -1,5 +1,5 @@
 # VSMobileCenterExtensions
-An extension library for to provided added value when running XCUITest tests in Visual Studio Mobile Center and Xamarin Test Cloud
+An extension library for to provided added value when running XCUITest tests in Visual Studio Mobile Center and Xamarin Test Cloud.
 
 - [Installation](#installation)
   - [Cocoapods](#cocoapods)
@@ -26,7 +26,8 @@ target 'MyUITestTarget' do
 end
 ```
 
-'MyUITestTarget' should be the name of the target for your XCUITests. If you're unsure, you can run 
+'MyUITestTarget' should be the name of the target for your XCUITests. If you're unsure of what your test target is called, 
+you can run 
 ```shell
 $ xcodebuild -list
 ```
@@ -46,7 +47,7 @@ using `[YOUR_PROJECT_NAME].xcworkspace` from now own. Please follow this instruc
 ```shell
 $ brew install carthage
 ```
-(If you don't have homebrew, you can get it [here](http://brew.sh/))
+If you don't have homebrew, you can get it [here](http://brew.sh/).
 
 2) Create a `Cartfile` with the following contents:
 
@@ -84,7 +85,8 @@ You may need to create one if you don't already have one. To do so, click the '+
 
 <img width="872" alt="addcopyfilesphase" src="https://cloud.githubusercontent.com/assets/3009852/22831259/8ffdf29e-ef5e-11e6-9e17-dfa874082ccf.png">
 
-Click on 'Add Other' and navigate to the framework:
+Once you have a 'Copy Files' phase, click the plus button to add a new file.
+Click 'Add Other...' and navigate to the framework:
 
 <img width="873" alt="clickaddother" src="https://cloud.githubusercontent.com/assets/3009852/22831280/a2f484b2-ef5e-11e6-9610-8103c4f401ce.png">
 
