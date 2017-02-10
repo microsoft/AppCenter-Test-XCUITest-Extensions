@@ -85,7 +85,9 @@ You may need to create one if you don't already have one. To do so, click the '+
 
 <img width="872" alt="addcopyfilesphase" src="https://cloud.githubusercontent.com/assets/3009852/22831259/8ffdf29e-ef5e-11e6-9e17-dfa874082ccf.png">
 
-Once you have a 'Copy Files' phase, click the plus button to add a new file.
+Once you have a 'Copy Files' phase, click the '+' button on the bottom left of the phase's pane to add a new file.
+<img width="663" alt="copyfilesphase" src="https://cloud.githubusercontent.com/assets/3009852/22832148/c8fcf010-ef61-11e6-9c8d-5750db12d78e.png">
+
 Click 'Add Other...' and navigate to the framework:
 
 <img width="873" alt="clickaddother" src="https://cloud.githubusercontent.com/assets/3009852/22831280/a2f484b2-ef5e-11e6-9610-8103c4f401ce.png">
