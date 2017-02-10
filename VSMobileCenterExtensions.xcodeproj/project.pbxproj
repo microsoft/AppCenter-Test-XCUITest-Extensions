@@ -15,6 +15,8 @@
 		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */; };
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
+		89959ACC1E4DFACD006B292B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895C8FA01E4DE27B0094FCE4 /* Info.plist */; };
+		89959ACD1E4DFAD1006B292B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895C8FA51E4DE27B0094FCE4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89959ACD1E4DFAD1006B292B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89959ACC1E4DFACD006B292B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
