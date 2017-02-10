@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'test-cloud-xcuitest-extensions'
+  s.name         = 'XCUITestExtensions'
   s.version      = '0.0.1'
   s.license      = { :type => 'MIT' } 
   s.homepage     = 'https://github.com/xamarinhq/test-cloud-xcuitest-extensions'
