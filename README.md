@@ -13,12 +13,12 @@ An extension library for to provided added value when running XCUITest tests in 
 
 ### Cocoapods
 
-1. Ensure you have installed the `cocoapods` gem:
+1) Ensure you have installed the `cocoapods` gem:
 ```shell
 $ gem install cocoapods
 ```
 
-2. Create a `Podfile` in your Xcode project folder with the following:
+2) Create a `Podfile` in your Xcode project folder with the following:
 
 ```ruby
 target 'MyUITestTarget' do
@@ -32,29 +32,29 @@ $ xcodebuild -list
 ```
 to see a list of available targets for your project. 
 
-3. Once you have created the `Podfile`, run
+3) Once you have created the `Podfile`, run
 ```shell
 $ pod install
 ```
 
-4. You will probably see a notice from `cocoapods` about closing the Xcode project (if currently open) and
+4) You will probably see a notice from `cocoapods` about closing the Xcode project (if currently open) and
 using `[YOUR_PROJECT_NAME].xcworkspace` from now own. Please follow this instruction. 
 
 ### Carthage 
 
-1. First ensure you have `carthage` available by running
+1) First ensure you have `carthage` available by running
 ```shell
 $ brew install carthage
 ```
 (If you don't have homebrew, you can get it [here](http://brew.sh/))
 
-2. Create a `Cartfile` with the following contents:
+2) Create a `Cartfile` with the following contents:
 
 ```
 github "xamarinhq/test-cloud-xcuitest-extensions"
 ```
 
-3. Follow the [Official Carthage Instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
+3) Follow the [Official Carthage Instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
 for installing frameworks from a Cartfile.
 
 ### Building from source
@@ -64,21 +64,21 @@ _Optional_: It is recommended that you install the `xcpretty` gem for nicer outp
 $ gem install xcpretty
 ```
 
-1. Run:
+1) Run:
 ```shell
 $ make
 ```
-this will build `VSMobileCenterExtensions.framework` inside of the `build/Release-iphoneos`
+This will build `VSMobileCenterExtensions.framework` inside of the `build/Release-iphoneos`
 folder. 
 
-2. Copy `VSMobileCenterExtensions.framework` into your application's project folder.
+2) Copy `VSMobileCenterExtensions.framework` into your application's project folder.
 
 <img width="574" alt="filestructure" src="https://cloud.githubusercontent.com/assets/3009852/22831228/7473bff4-ef5e-11e6-8fb5-7d9ae57e639b.png">
 
-3. In Xcode, in the 'Build Phases' tab of your _UI Test target_ (not your main application target), 
+3) In Xcode, in the 'Build Phases' tab of your _UI Test target_ (not your main application target), 
 add the `VSMobileCenterExtensions.framework` in the 'Link Binary With Libraries' phase.
 
-4. In the same tab, add the `VSMobileCenterExtensions.framework` to your 'Copy Files' phase. 
+4) In the same tab, add the `VSMobileCenterExtensions.framework` to your 'Copy Files' phase. 
 
 You may need to create one if you don't already have one. To do so, click the '+' sign on the top left of the pane:
 
