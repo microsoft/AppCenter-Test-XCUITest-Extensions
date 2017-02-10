@@ -7,8 +7,8 @@ if [ ! -z "${VERBOSE}" ]; then
 fi
 
 if [ "`which xcpretty`" != '' ]; then
-  xcodebuild -configuration Release | xcpretty
+  xcodebuild -configuration Release -sdk iphoneos | xcpretty
 else
-  xcodebuild -configuration Release
+  xcodebuild -configuration Release -sdk iphoneos
 fi
 
