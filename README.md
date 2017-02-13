@@ -1,13 +1,35 @@
 # VSMobileCenterExtensions
-An extension library for to provided added value when running XCUITest tests in Visual Studio Mobile Center and Xamarin Test Cloud.
 
+An extension library for triggering screenshots/marking test steps when running XCUITests in Visual Studio Mobile Center / Xamarin 
+Test Cloud. By default, test steps are automatically marked at the conclusion of each test method (which also triggers a screenshot); 
+this library allows you to explicitly declare where you want to mark your test steps / trigger screenshots. 
+
+- [Requirements](#requirements)
+  - [Using](#using)
+  - [Building](#building)
 - [Installation](#installation)
   - [Cocoapods](#cocoapods)
   - [Carthage](#carthage)
-  - [Build from source](#building-from-source)
+  - [Building from source](#building-from-source)
 - [Usage](#usage)
   - [Objective-C](#objective-c)
   - [Swift](#swift)
+
+# Requirements
+
+### Using
+`VSMobileCenterExtensions.framework` is built for iOS 9.0 or later. 
+
+### Building
+VSMobileCenterExtensions has been tested on OSX El Capitan (10.11.5) and Xcode 8.2. However, it should work on newer 
+versions of Xcode/OSX. Feel free to file an [issue](https://github.com/xamarinhq/test-cloud-xcuitest-extensions/issues/new) if you have trouble with a newer OS / Xcode configuration. 
+
+In order to run the unit tests, you will also need to change the project's codesign info locally to point to a certificate 
+installed on your own machine. 
+
+<img width="876" alt="screen shot 2017-02-13 at 2 24 51 am" src="https://cloud.githubusercontent.com/assets/3009852/22879607/b34c6eec-f193-11e6-9c33-32bed8e07e5f.png">
+
+If you want to install the `xcpretty` gem (see [building from source](#building-from-source) below), you will also need a valid ruby installation. Ruby 2.2.1 or higher is recommended. 
 
 # Installation
 
