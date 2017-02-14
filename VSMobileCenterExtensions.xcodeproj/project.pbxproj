@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		897934CC1E4CD03300546131 /* XCUITestExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 897934CA1E4CD03300546131 /* XCUITestExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897934D41E4CD0A400546131 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 897934D21E4CD0A400546131 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897934DF1E4CD1DA00546131 /* XCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934C71E4CD03300546131 /* XCUITestExtensions.framework */; };
-		897934E91E4CD35900546131 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 897934DC1E4CD1DA00546131 /* MCLabelTests.m */; };
+		894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */; };
+		894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */; };
+		895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */; };
+		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
+		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */; };
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
-		897934F01E4CDC8800546131 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 897934EF1E4CDC8800546131 /* MCLabel.m */; };
-		89CC4A3C1E4CEEFE00323361 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CC4A3B1E4CEEFE00323361 /* MCLabelTests.swift */; };
+		89959ACC1E4DFACD006B292B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895C8FA01E4DE27B0094FCE4 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		897934C71E4CD03300546131 /* XCUITestExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCUITestExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		897934CA1E4CD03300546131 /* XCUITestExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUITestExtensions.h; sourceTree = "<group>"; };
-		897934CB1E4CD03300546131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		897934D21E4CD0A400546131 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; };
-		897934DA1E4CD1DA00546131 /* XCUITestExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		897934DC1E4CD1DA00546131 /* MCLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLabelTests.m; sourceTree = "<group>"; };
-		897934DE1E4CD1DA00546131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895C8FA01E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTests.m; sourceTree = "<group>"; };
+		895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTests.swift; sourceTree = "<group>"; };
+		895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensionsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		895C8FA51E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895C8FA61E4DE27B0094FCE4 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; };
+		895C8FA71E4DE27B0094FCE4 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; };
+		895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMobileCenterExtensions.h; sourceTree = "<group>"; };
+		897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSMobileCenterExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSMobileCenterExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897934E61E4CD2A800546131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		897934EF1E4CDC8800546131 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; };
-		89CC4A3A1E4CEEFD00323361 /* XCUITestExtensionsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCUITestExtensionsTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		89CC4A3B1E4CEEFE00323361 /* MCLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,18 +55,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897934DF1E4CD1DA00546131 /* XCUITestExtensions.framework in Frameworks */,
+				897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				895C8FA01E4DE27B0094FCE4 /* Info.plist */,
+				895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */,
+				895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */,
+				895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */,
+			);
+			path = VSMobileCenterExtensionsTests;
+			sourceTree = "<group>";
+		};
+		895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				895C8FA51E4DE27B0094FCE4 /* Info.plist */,
+				895C8FA61E4DE27B0094FCE4 /* MCLabel.h */,
+				895C8FA71E4DE27B0094FCE4 /* MCLabel.m */,
+				895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */,
+			);
+			path = VSMobileCenterExtensions;
+			sourceTree = "<group>";
+		};
 		897934BD1E4CD03300546131 = {
 			isa = PBXGroup;
 			children = (
-				897934C91E4CD03300546131 /* XCUITestExtensions */,
-				897934DB1E4CD1DA00546131 /* XCUITestExtensionsTests */,
+				895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */,
+				895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */,
 				897934C81E4CD03300546131 /* Products */,
 				897934E51E4CD2A800546131 /* Frameworks */,
 			);
@@ -73,32 +97,10 @@
 		897934C81E4CD03300546131 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				897934C71E4CD03300546131 /* XCUITestExtensions.framework */,
-				897934DA1E4CD1DA00546131 /* XCUITestExtensionsTests.xctest */,
+				897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */,
+				897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		897934C91E4CD03300546131 /* XCUITestExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				897934CA1E4CD03300546131 /* XCUITestExtensions.h */,
-				897934CB1E4CD03300546131 /* Info.plist */,
-				897934D21E4CD0A400546131 /* MCLabel.h */,
-				897934EF1E4CDC8800546131 /* MCLabel.m */,
-			);
-			path = XCUITestExtensions;
-			sourceTree = "<group>";
-		};
-		897934DB1E4CD1DA00546131 /* XCUITestExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				897934DC1E4CD1DA00546131 /* MCLabelTests.m */,
-				897934DE1E4CD1DA00546131 /* Info.plist */,
-				89CC4A3B1E4CEEFE00323361 /* MCLabelTests.swift */,
-				89CC4A3A1E4CEEFD00323361 /* XCUITestExtensionsTests-Bridging-Header.h */,
-			);
-			path = XCUITestExtensionsTests;
 			sourceTree = "<group>";
 		};
 		897934E51E4CD2A800546131 /* Frameworks */ = {
@@ -116,17 +118,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897934CC1E4CD03300546131 /* XCUITestExtensions.h in Headers */,
-				897934D41E4CD0A400546131 /* MCLabel.h in Headers */,
+				895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */,
+				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
+				895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		897934C61E4CD03300546131 /* XCUITestExtensions */ = {
+		897934C61E4CD03300546131 /* VSMobileCenterExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "XCUITestExtensions" */;
+			buildConfigurationList = 897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensions" */;
 			buildPhases = (
 				897934C21E4CD03300546131 /* Sources */,
 				897934C31E4CD03300546131 /* Frameworks */,
@@ -137,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = XCUITestExtensions;
+			name = VSMobileCenterExtensions;
 			productName = XCUITestExtensions;
-			productReference = 897934C71E4CD03300546131 /* XCUITestExtensions.framework */;
+			productReference = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		897934D91E4CD1DA00546131 /* XCUITestExtensionsTests */ = {
+		897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "XCUITestExtensionsTests" */;
+			buildConfigurationList = 897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */;
 			buildPhases = (
 				897934D61E4CD1DA00546131 /* Sources */,
 				897934D71E4CD1DA00546131 /* Frameworks */,
@@ -155,9 +158,9 @@
 			dependencies = (
 				897934E11E4CD1DA00546131 /* PBXTargetDependency */,
 			);
-			name = XCUITestExtensionsTests;
+			name = VSMobileCenterExtensionsTests;
 			productName = XCUITestExtensionsTests;
-			productReference = 897934DA1E4CD1DA00546131 /* XCUITestExtensionsTests.xctest */;
+			productReference = 897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -172,6 +175,7 @@
 					897934C61E4CD03300546131 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = FYD86LA7RE;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					897934D91E4CD1DA00546131 = {
@@ -182,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 897934C11E4CD03300546131 /* Build configuration list for PBXProject "XCUITestExtensions" */;
+			buildConfigurationList = 897934C11E4CD03300546131 /* Build configuration list for PBXProject "VSMobileCenterExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -194,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				897934C61E4CD03300546131 /* XCUITestExtensions */,
-				897934D91E4CD1DA00546131 /* XCUITestExtensionsTests */,
+				897934C61E4CD03300546131 /* VSMobileCenterExtensions */,
+				897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89959ACC1E4DFACD006B292B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897934F01E4CDC8800546131 /* MCLabel.m in Sources */,
+				895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89CC4A3C1E4CEEFE00323361 /* MCLabelTests.swift in Sources */,
-				897934E91E4CD35900546131 /* MCLabelTests.m in Sources */,
+				894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */,
+				894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +245,7 @@
 /* Begin PBXTargetDependency section */
 		897934E11E4CD1DA00546131 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 897934C61E4CD03300546131 /* XCUITestExtensions */;
+			target = 897934C61E4CD03300546131 /* VSMobileCenterExtensions */;
 			targetProxy = 897934E01E4CD1DA00546131 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -346,19 +351,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = XCUITestExtensions/Info.plist;
+				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.XCUITestExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -366,19 +374,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				INFOPLIST_FILE = XCUITestExtensions/Info.plist;
+				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.XCUITestExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -387,11 +398,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = XCUITestExtensionsTests/Info.plist;
+				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.XCUITestExtensionsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XCUITestExtensionsTests/XCUITestExtensionsTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -402,11 +413,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = XCUITestExtensionsTests/Info.plist;
+				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.XCUITestExtensionsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XCUITestExtensionsTests/XCUITestExtensionsTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -414,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897934C11E4CD03300546131 /* Build configuration list for PBXProject "XCUITestExtensions" */ = {
+		897934C11E4CD03300546131 /* Build configuration list for PBXProject "VSMobileCenterExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897934CD1E4CD03300546131 /* Debug */,
@@ -423,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "XCUITestExtensions" */ = {
+		897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897934D01E4CD03300546131 /* Debug */,
@@ -432,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "XCUITestExtensionsTests" */ = {
+		897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897934E31E4CD1DA00546131 /* Debug */,
