@@ -14,7 +14,7 @@ this library allows you to explicitly declare where you want to mark your test s
 - [Usage](#usage)
   - [Objective-C](#objective-c)
   - [Swift](#swift)
-- [Preparing Your Application Bundles](#preparing-your-applicaiton-bundles)
+- [Preparing Your Application Bundles](#preparing-your-application-bundles)
 
 # Requirements
 
