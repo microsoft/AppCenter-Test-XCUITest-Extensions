@@ -171,7 +171,7 @@ class MyTestCase: XCTestCase {
 In order to run a test in Xamarin Test Cloud or Mobile Center, you will need to build your application and XCUITest runner bundles. To do this, run the following command from the root of your application project directory:
 
 ```shell
-$ xcrun xcodebuild build-for-testing -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath .
+$ xcrun xcodebuild build-for-testing -configuration Debug -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath .
 ```
 This will build your Application and your XCUITest-Runner into a local directory called `Build` (specifically, the bundles are in
 `Build/Products/Debug-iphoneos/`).
