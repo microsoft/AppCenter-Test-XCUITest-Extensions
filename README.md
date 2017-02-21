@@ -14,6 +14,7 @@ this library allows you to explicitly declare where you want to mark your test s
 - [Usage](#usage)
   - [Objective-C](#objective-c)
   - [Swift](#swift)
+- [Preparing Your Application Bundles](#preparing-your-applicaiton-bundles)
 
 # Requirements
 
@@ -164,3 +165,20 @@ class MyTestCase: XCTestCase {
     }
 }
 ```
+
+# Preparing Your Application Bundles
+
+In order to run a test in Xamarin Test Cloud or Mobile Center, you will need to build your application and XCUITest runner bundles. To do this, run the following command from the root of your application project directory:
+
+```shell
+$ xcrun xcodebuild build-for-testing -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath .
+```
+This will build your Application and your XCUITest-Runner into a local directory called `Build` (specifically, the bundles are in
+`Build/Products/Debug-iphoneos/`).
+
+`YOUR_WORKSPACE` should point to a `.xcworkspace` file, likely titled `PROJECT_NAME.xcworkspace`. `YOUR_APPLICAITON_SCHEME` should be 
+the scheme you use to build your application. By default it is usually the name of your application. If you are unsure, you can run
+```
+$ xcrun xcodebuild -list
+```
+to see a list of valid schemes. For more information about Xcode schemes, see the [Apple Developer Documentation](https://developer.apple.com/library/content/featuredarticles/XcodeConcepts/Concept-Schemes.html).  
