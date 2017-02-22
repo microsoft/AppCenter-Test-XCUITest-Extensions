@@ -135,10 +135,10 @@ It accepts a format string and arguments just like `NSLog()`:
 ```objective-c
 #import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
 
-- (void)myTest {
-    //Some test logic....
+- (void)testExample {
+    //Some test logic...
   
-    [MCLabel label:fmt, ... ];
+    [MCLabel label:fmt, ...];
     // or
     label(fmt, ...);
 
@@ -154,12 +154,12 @@ In Swift the function is called `MCLabel.labelStep()` and it accepts a string, a
 import VSMobileCenterExtensions
 
 class MyTestCase: XCTestCase {
-    func myTestCase() {
+    func textExample() {
         //Some test logic...
 
         MCLabel.labelStep(label)
         //or
-        MCLabel.labelStep(fmt, args: getVaList([ ... ]))
+        MCLabel.labelStep(fmt, args: getVaList([ arg, ... ]))
 
         //More test logic...
     }
