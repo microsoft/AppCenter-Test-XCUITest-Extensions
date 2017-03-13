@@ -1,4 +1,4 @@
-# VSMobileCenterExtensionsA
+# VSMobileCenterExtensions
 
 An extension library for triggering screenshots/marking test steps when running XCUITests in Visual Studio Mobile Center / Xamarin 
 Test Cloud. By default, test steps are automatically marked at the conclusion of each test method (which also triggers a screenshot); 
