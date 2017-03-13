@@ -14,6 +14,7 @@ this library allows you to explicitly declare where you want to mark your test s
 - [Usage](#usage)
   - [Objective-C](#objective-c)
   - [Swift](#swift)
+- [Preparing Your Application Bundles](#preparing-your-application-bundles)
 
 # Requirements
 
@@ -138,10 +139,10 @@ It accepts a format string and arguments just like `NSLog()`:
 ```objective-c
 #import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
 
-- (void)myTest {
-    //Some test logic....
+- (void)testExample {
+    //Some test logic...
   
-    [MCLabel label:fmt, ... ];
+    [MCLabel label:fmt, ...];
     // or
     label(fmt, ...);
 
@@ -157,14 +158,31 @@ In Swift the function is called `MCLabel.labelStep()` and it accepts a string, a
 import VSMobileCenterExtensions
 
 class MyTestCase: XCTestCase {
-    func myTestCase() {
+    func textExample() {
         //Some test logic...
 
         MCLabel.labelStep(label)
         //or
-        MCLabel.labelStep(fmt, args: getVaList([ ... ]))
+        MCLabel.labelStep(fmt, args: getVaList([ arg, ... ]))
 
         //More test logic...
     }
 }
 ```
+
+# Preparing Your Application Bundles
+
+In order to run a test in Xamarin Test Cloud or Mobile Center, you will need to build your application and XCUITest runner bundles. To do this, run the following command from the root of your application project directory:
+
+```shell
+$ xcrun xcodebuild build-for-testing -configuration Debug -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath .
+```
+This will build your Application and your XCUITest-Runner into a local directory called `Build` (specifically, the bundles are in
+`Build/Products/Debug-iphoneos/`).
+
+`YOUR_WORKSPACE` should point to a `.xcworkspace` file, likely titled `PROJECT_NAME.xcworkspace`. `YOUR_APPLICAITON_SCHEME` should be 
+the scheme you use to build your application. By default it is usually the name of your application. If you are unsure, you can run
+```
+$ xcrun xcodebuild -list
+```
+to see a list of valid schemes. For more information about Xcode schemes, see the [Apple Developer Documentation](https://developer.apple.com/library/content/featuredarticles/XcodeConcepts/Concept-Schemes.html).  
