@@ -1,4 +1,4 @@
-# VSMobileCenterExtensions
+# VSMobileCenterExtensionsA
 
 An extension library for triggering screenshots/marking test steps when running XCUITests in Visual Studio Mobile Center / Xamarin 
 Test Cloud. By default, test steps are automatically marked at the conclusion of each test method (which also triggers a screenshot); 
@@ -15,6 +15,7 @@ this library allows you to explicitly declare where you want to mark your test s
   - [Objective-C](#objective-c)
   - [Swift](#swift)
 - [Preparing Your Application Bundles](#preparing-your-application-bundles)
+- [Uploading Your Tests](#uploading-your-tests)
 
 # Requirements
 
@@ -186,3 +187,18 @@ the scheme you use to build your application. By default it is usually the name 
 $ xcrun xcodebuild -list
 ```
 to see a list of valid schemes. For more information about Xcode schemes, see the [Apple Developer Documentation](https://developer.apple.com/library/content/featuredarticles/XcodeConcepts/Concept-Schemes.html).  
+
+# Uploading Your Tests
+
+First make sure you have the `xtc` uploader tool by following the [installation instructions](https://github.com/xamarinhq/test-cloud-appium-java-extensions/blob/master/UploaderInstall.md/#installation).
+
+If you do not have an existing device key ready, you can generate one by following the new test run dialog in [Test Cloud](https://testcloud.xamarin.com). 
+On the final screen, extract only the device key from the generated command.
+
+To upload your tests, run the following command:
+
+```shell
+$ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace Build/Products/Debug-iphoneos
+```
+
+_Note: If you are having trouble targeting the xtc command, try executing with the fully qualified path to the package_
