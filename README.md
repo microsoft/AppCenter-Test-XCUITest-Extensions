@@ -33,6 +33,10 @@ If you want to install the `xcpretty` gem (see [building from source](#building-
 
 # Installation
 
+ 
+ The extension can be added to your Xcode XCUITest target by using a dependency manager (Cocoapods or Carthage)
+ or by manually including it in the target.
+
 ### Cocoapods
 
 1) Ensure you have installed the `cocoapods` gem:
