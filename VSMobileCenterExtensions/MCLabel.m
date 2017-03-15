@@ -9,7 +9,7 @@
 const NSString *LABEL_PREFIX = @"CBX|";
 
 /*
- Hijack XCUITest's _XCINFLog() function to transfer our label over the wire.
+ Use XCUITest's _XCINFLog() function to transfer our label over the wire.
  */
 void _XCINFLog(NSString *msg);
 
