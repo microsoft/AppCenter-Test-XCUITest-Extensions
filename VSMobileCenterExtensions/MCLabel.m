@@ -8,8 +8,6 @@
  */
 const NSString *LABEL_PREFIX = @"[MobileCenterTest]: ";
 
-typedef void (^block)(void);
-
 /*
   We need some references to private API methods, so we'll declare them here.
  */
@@ -27,9 +25,11 @@ typedef void (^block)(void);
 @property(retain, nonatomic) NSMutableArray <XCActivityRecord *> *activityRecordStack;
 @end
 
+typedef void (^activityBlock)(XCActivityRecord *activityRecord);
+
 @interface XCTestCase (MCTAccess)
 @property(retain) _XCTestCaseImplementation *internalImplementation;
-- (void)startActivityWithTitle:(NSString *)title block:(block)block;
+- (void)startActivityWithTitle:(NSString *)title block:(activityBlock)block;
 @end
 
 XCTestCase *_XCTCurrentTestCase();
@@ -71,9 +71,9 @@ void _XCINFLog(NSString *msg);
             This activity merely captures a screenshot, which is then processed
             by MobileCenter/XTC.
          */
-        [testCase startActivityWithTitle:[NSString stringWithFormat:@"%@%@", LABEL_PREFIX, message] block:^{
-            XCActivityRecord *current = [testCase.internalImplementation.activityRecordStack lastObject];
-            if (current == nil) {
+        [testCase startActivityWithTitle:[NSString stringWithFormat:@"%@%@", LABEL_PREFIX, message]
+                                   block:^(XCActivityRecord *activityRecord){
+            if (activityRecord == nil) {
                 [self labelFailedWithError:@"No XCActivityRecord currently exists."
                               labelMessage:message];
             } else {
@@ -86,7 +86,7 @@ void _XCINFLog(NSString *msg);
                         [self labelFailedWithError:@"Unable to fetch screenshot data from Accessibility Client."
                                       labelMessage:message];
                     } else {
-                        [current setScreenImageData:screenshotData];
+                        [activityRecord setScreenImageData:screenshotData];
                     }
                 }
             }
