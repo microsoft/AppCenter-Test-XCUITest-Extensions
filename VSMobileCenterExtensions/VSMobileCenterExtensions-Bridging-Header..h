@@ -1,2 +1,2 @@
 
-#import <VSMobileCenterExtensions/VSMobileCenterExtensions.h>
+#import "VSMobileCenterExtensions.h"

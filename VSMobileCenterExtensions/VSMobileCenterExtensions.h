@@ -1,2 +1,2 @@
 
-#import <VSMobileCenterExtensions/MCLabel.h>
+#import "MCLabel.h"
