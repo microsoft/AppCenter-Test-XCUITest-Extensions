@@ -50,6 +50,8 @@ $ gem install cocoapods
 2) Create a `Podfile` in your Xcode project folder with the following:
 
 ```ruby
+use_frameworks! #this line is necessary if your project is using Swift
+
 target 'MyUITestTarget' do
   pod 'VSMobileCenterExtensions'
 end
