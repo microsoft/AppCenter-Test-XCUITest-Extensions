@@ -216,4 +216,4 @@ If you are building Swift XCUITests using Xcode 8.3, you may encounter a build e
 As a workaround, you can disable bitcode in your App target and your XCUITest target. To do this, 
 go to Build Settings, search for `ENABLE_BITCODE` and set the value to `No` for both targets. 
 
-TODO: SCREENSHOT 
+<img width="1076" alt="screen shot 2017-04-06 at 12 43 24 pm" src="https://cloud.githubusercontent.com/assets/3009852/24772614/de004eea-1ac6-11e7-975a-bcdfae01d068.png">
