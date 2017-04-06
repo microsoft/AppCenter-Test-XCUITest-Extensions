@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header..h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header..h */; settings = {ATTRIBUTES = (Public, ); }; };
 		894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */; };
 		894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */; };
-		895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */; };
+		895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
 		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header..h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensions-Bridging-Header..h"; sourceTree = "<group>"; };
 		895C8FA01E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTests.m; sourceTree = "<group>"; };
 		895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTests.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				895C8FA61E4DE27B0094FCE4 /* MCLabel.h */,
 				895C8FA71E4DE27B0094FCE4 /* MCLabel.m */,
 				895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */,
+				893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header..h */,
 			);
 			path = VSMobileCenterExtensions;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			files = (
 				895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */,
 				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
+				893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header..h in Headers */,
 				895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +354,7 @@
 		897934D01E4CD03300546131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -366,6 +371,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensions/VSMobileCenterExtensions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -373,6 +380,7 @@
 		897934D11E4CD03300546131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensions/VSMobileCenterExtensions-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

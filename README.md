@@ -1,4 +1,5 @@
 # VSMobileCenterExtensions
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 An extension library for triggering screenshots/marking test steps when running XCUITests in Visual Studio Mobile Center / Xamarin 
 Test Cloud. By default, test steps are automatically marked at the conclusion of each test method (which also triggers a screenshot); 
@@ -16,6 +17,7 @@ this library allows you to explicitly declare where you want to mark your test s
   - [Swift](#swift)
 - [Preparing Your Application Bundles](#preparing-your-application-bundles)
 - [Uploading Your Tests](#uploading-your-tests)
+- [Known Issues](#known-issues)
 
 # Requirements
 
@@ -49,6 +51,8 @@ $ gem install cocoapods
 2) Create a `Podfile` in your Xcode project folder with the following:
 
 ```ruby
+use_frameworks! #this line is necessary if your project is using Swift
+
 target 'MyUITestTarget' do
   pod 'VSMobileCenterExtensions'
 end
@@ -202,3 +206,14 @@ $ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace Build/
 ```
 
 _Note: If you are having trouble targeting the xtc command, try executing with the fully qualified path to the package_
+
+# Known Issues
+
+
+### Xcode 8.3 and Swift
+
+If you are building Swift XCUITests using Xcode 8.3, you may encounter a build error related to bitcode.
+As a workaround, you can disable bitcode in your App target and your XCUITest target. To do this, 
+go to Build Settings, search for `ENABLE_BITCODE` and set the value to `No` for both targets. 
+
+<img width="1076" alt="screen shot 2017-04-06 at 12 43 24 pm" src="https://cloud.githubusercontent.com/assets/3009852/24772614/de004eea-1ac6-11e7-975a-bcdfae01d068.png">
