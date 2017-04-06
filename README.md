@@ -17,6 +17,7 @@ this library allows you to explicitly declare where you want to mark your test s
   - [Swift](#swift)
 - [Preparing Your Application Bundles](#preparing-your-application-bundles)
 - [Uploading Your Tests](#uploading-your-tests)
+- [Known Issues](#known-issues)
 
 # Requirements
 
@@ -205,3 +206,14 @@ $ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace Build/
 ```
 
 _Note: If you are having trouble targeting the xtc command, try executing with the fully qualified path to the package_
+
+# Known Issues
+
+
+### Xcode 8.3 and Swift
+
+If you are building Swift XCUITests using Xcode 8.3, you may encounter a build error related to bitcode.
+As a workaround, you can disable bitcode in your App target and your XCUITest target. To do this, 
+go to Build Settings, search for `ENABLE_BITCODE` and set the value to `No` for both targets. 
+
+TODO: SCREENSHOT 
