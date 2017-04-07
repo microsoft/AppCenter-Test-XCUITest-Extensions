@@ -10,7 +10,6 @@
 		893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */; };
 		894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */; };
-		895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
 		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,7 +120,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895C8FAC1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h in Headers */,
 				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
 				893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */,
 				895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */,
