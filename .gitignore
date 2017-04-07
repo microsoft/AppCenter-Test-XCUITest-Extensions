@@ -20,3 +20,9 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+## Editors
+.idea
+*~
+(.*/)?\#[^/]*\#$
+*.swp
