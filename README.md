@@ -209,6 +209,48 @@ _Note: If you are having trouble targeting the xtc command, try executing with t
 
 # Known Issues
 
+### 
+
+When performing gestures in XTC/Mobile Center Test, you may see an error message like the following:
+
+```
+UI Testing Failure - Failed to scroll to visible (by AX action) Button
+...
+Error -25204 performing AXAction 2003
+```
+
+Presently, the issue not fully understood and believed to originate in `XCTest.framework`. However, evidence suggests
+that one possible cause is related to XCUITest not being able to 'see' the element in the hierarchy when the gesture
+is invoked. 
+
+While not foolproof, as a potential workaround and general improvement to test stability, 
+we recommend adapting the following scaffolding code to your gestures invocation (example is for a `tap` gesture):
+
+_Objective-C_
+```objc
+- (void)waitAndTap:(XCUIElement *)button {
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"exists == 1 && hittable == 1"];
+    [self expectationForPredicate:pred
+              evaluatedWithObject:button
+                          handler:nil];
+    [self waitForExpectationsWithTimeout:180.0 handler:nil];
+    [button tap];
+}
+```
+
+_Swift_
+```swift
+func waitAndTap(element: XCUIElement) {
+    let predicate = NSPredicate(format: "exists == 1 && hittable == 1")
+    expectation(for: predicate, evaluatedWith: element)
+    waitForExpectations(timeout: 5 /*Or a larger value if necessary*/)
+    element.tap()
+}
+``` 
+
+You would then invoke `waitAndTap` instead of `tap` to ensure that the element in question is in a hittable state. 
+
+Note that in XTC/Mobile Center Test, this issue appears to only be prevelant on iPhone 7 devices.
 
 ### Xcode 8.3 and Swift
 
@@ -216,3 +258,4 @@ If you are building Swift XCUITests using Xcode >= 8.3, you may encounter a buil
 go to Build Settings, search for `ENABLE_BITCODE` and set the value to `NO` for the test target.  You should not need to change the setting for the App target.
 
 <img width="1076" alt="screen shot 2017-04-06 at 12 43 24 pm" src="https://cloud.githubusercontent.com/assets/3009852/24772614/de004eea-1ac6-11e7-975a-bcdfae01d068.png">
+
