@@ -226,19 +226,19 @@ is invoked.
 While not foolproof, as a potential workaround and general improvement to test stability, 
 we recommend adapting the following scaffolding code to your gestures invocation (example is for a `tap` gesture):
 
-_Objective-C_
+Objective-C
 ```objc
 - (void)waitAndTap:(XCUIElement *)button {
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"exists == 1 && hittable == 1"];
     [self expectationForPredicate:pred
               evaluatedWithObject:button
                           handler:nil];
-    [self waitForExpectationsWithTimeout:180.0 handler:nil];
+    [self waitForExpectationsWithTimeout:5 /*or a larger value if necessary*/ handler:nil];
     [button tap];
 }
 ```
 
-_Swift_
+Swift
 ```swift
 func waitAndTap(element: XCUIElement) {
     let predicate = NSPredicate(format: "exists == 1 && hittable == 1")
