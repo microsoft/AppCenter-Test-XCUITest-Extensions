@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'VSMobileCenterExtensions'
   s.version      = version
-  s.license      = { :type => 'MIT' } 
+  s.license      = { :type => 'MIT' }
   s.homepage     = 'https://github.com/xamarinhq/test-cloud-xcuitest-extensions'
   s.authors      = { 'Chris Fuentes' => 'chfuen@microsoft.com' }
   s.summary      = 'Extension library to add value to XCUITests run in Xamarin Test Cloud/Visual Studio Mobile Center'
