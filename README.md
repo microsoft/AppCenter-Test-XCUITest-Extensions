@@ -180,10 +180,11 @@ class MyTestCase: XCTestCase {
 In order to run a test in Xamarin Test Cloud or Mobile Center, you will need to build your application and XCUITest runner bundles. To do this, run the following command from the root of your application project directory:
 
 ```shell
-$ xcrun xcodebuild build-for-testing -configuration Debug -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath .
+$ rm -rf ddp #remove the derivedDataPath if it exists
+$ xcrun xcodebuild build-for-testing -configuration Debug -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath ddp
 ```
-This will build your Application and your XCUITest-Runner into a local directory called `Build` (specifically, the bundles are in
-`Build/Products/Debug-iphoneos/`).
+This will build your Application and your XCUITest-Runner into a directory called `ddp/Build` (specifically, the bundles are in
+`ddp/Build/Products/Debug-iphoneos/`).
 
 `YOUR_WORKSPACE` should point to a `.xcworkspace` file, likely titled `PROJECT_NAME.xcworkspace`. `YOUR_APPLICAITON_SCHEME` should be 
 the scheme you use to build your application. By default it is usually the name of your application. If you are unsure, you can run
@@ -202,7 +203,7 @@ On the final screen, extract only the device key from the generated command.
 To upload your tests, run the following command:
 
 ```shell
-$ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace Build/Products/Debug-iphoneos
+$ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace ddp/Build/Products/Debug-iphoneos
 ```
 
 _Note: If you are having trouble targeting the xtc command, try executing with the fully qualified path to the package_
