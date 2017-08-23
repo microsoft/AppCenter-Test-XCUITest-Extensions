@@ -9,7 +9,7 @@
 const NSString *LABEL_PREFIX = @"[MobileCenterTest]: ";
 
 /*
-  We need some references to private API methods, so we'll declare them here.
+ We need some references to private API methods, so we'll declare them here.
  */
 @interface XCAXClient_iOS : NSObject
 + (XCAXClient_iOS *)sharedClient;
@@ -58,7 +58,7 @@ void _XCINFLog(NSString *msg);
 }
 
 /*
-    We add in the prefix and pass it along to XCTest
+ We add in the prefix and pass it along to XCTest
  */
 + (void)_label:(NSString *)message {
     XCTestCase *testCase = [self currentTestCase];
@@ -67,30 +67,30 @@ void _XCINFLog(NSString *msg);
                       labelMessage:message];
     } else {
         /*
-            Declare that we are starting an activity, titled with the user's label.
-            This activity merely captures a screenshot, which is then processed
-            by MobileCenter/XTC.
+         Declare that we are starting an activity, titled with the user's label.
+         This activity merely captures a screenshot, which is then processed
+         by MobileCenter/XTC.
          */
         [testCase startActivityWithTitle:[NSString stringWithFormat:@"%@%@", LABEL_PREFIX, message]
                                    block:^(XCActivityRecord *activityRecord){
-            if (activityRecord == nil) {
-                [self labelFailedWithError:@"No XCActivityRecord currently exists."
-                              labelMessage:message];
-            } else {
-                XCAXClient_iOS *client = [XCAXClient_iOS sharedClient];
-                if (client == nil) {
-                    [self labelFailedWithError:@"Unable to fetch Accessibility Client." labelMessage:message];
-                } else {
-                    NSData *screenshotData = [client screenshotData];
-                    if (screenshotData == nil) {
-                        [self labelFailedWithError:@"Unable to fetch screenshot data from Accessibility Client."
-                                      labelMessage:message];
-                    } else {
-                        [activityRecord setScreenImageData:screenshotData];
-                    }
-                }
-            }
-        }];
+                                       if (activityRecord == nil) {
+                                           [self labelFailedWithError:@"No XCActivityRecord currently exists."
+                                                         labelMessage:message];
+                                       } else {
+                                           XCAXClient_iOS *client = [XCAXClient_iOS sharedClient];
+                                           if (client == nil) {
+                                               [self labelFailedWithError:@"Unable to fetch Accessibility Client." labelMessage:message];
+                                           } else {
+                                               NSData *screenshotData = [client screenshotData];
+                                               if (screenshotData == nil) {
+                                                   [self labelFailedWithError:@"Unable to fetch screenshot data from Accessibility Client."
+                                                                 labelMessage:message];
+                                               } else {
+                                                   [activityRecord setScreenImageData:screenshotData];
+                                               }
+                                           }
+                                       }
+                                   }];
     }
 }
 
@@ -107,6 +107,5 @@ void _XCINFLog(NSString *msg);
     _XCINFLog([NSString stringWithFormat:@"%@ERROR: %@", LABEL_PREFIX, errorMessage]);
     _XCINFLog([NSString stringWithFormat:@"%@ERROR: Unable to process label(\"%@\")", LABEL_PREFIX, labelMessage]);
 }
-
 
 @end
