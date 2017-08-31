@@ -32,7 +32,7 @@ typedef void (^activityBlock)(XCActivityRecord *activityRecord);
 - (void)startActivityWithTitle:(NSString *)title block:(activityBlock)block;
 @end
 
-XCTestCase *_XCTCurrentTestCase();
+XCTestCase *_XCTCurrentTestCase(void);
 void _XCINFLog(NSString *msg);
 
 @implementation MCLabel
