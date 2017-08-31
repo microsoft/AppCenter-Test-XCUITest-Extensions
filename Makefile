@@ -15,3 +15,6 @@ pod-lint:
 
 carthage:
 	bin/make/carthage.sh
+
+test:
+	bin/make/test.sh
