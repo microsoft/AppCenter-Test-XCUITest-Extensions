@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
-set -e
+source bin/log.sh
+source bin/simctl.sh
+ensure_valid_core_sim_service
 
-if [ ! -z "${VERBOSE}" ]; then
-  set -x
-fi
-
-if [ "`which xcpretty`" != '' ]; then
-  xcodebuild -configuration Release -sdk iphoneos | xcpretty
+hash xcpretty 2>/dev/null
+if [ $? -eq 0 ] && [ "${XCPRETTY}" != "0" ]; then
+  XC_PIPE='xcpretty -c'
 else
-  xcodebuild -configuration Release -sdk iphoneos
+  XC_PIPE='cat'
 fi
 
+set -e -o pipefail
+
+xcrun xcodebuild -configuration Release -sdk iphoneos | $XC_PIPE

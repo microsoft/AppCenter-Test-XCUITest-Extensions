@@ -1,10 +1,8 @@
+.PHONY:	build carthage
 
 all:
 	$(MAKE) clean
 	$(MAKE) build
-
-.PHONY:
-	build
 
 clean:
 	rm -rf build
@@ -13,7 +11,7 @@ build:
 	bin/make/build.sh
 
 pod-lint:
-	bin/make/pod_lint.sh
+	bin/make/pod-lint.sh
 
 carthage:
 	bin/make/carthage.sh
