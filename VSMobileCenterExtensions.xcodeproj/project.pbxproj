@@ -94,7 +94,9 @@
 				897934C81E4CD03300546131 /* Products */,
 				897934E51E4CD2A800546131 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		897934C81E4CD03300546131 /* Products */ = {
 			isa = PBXGroup;
