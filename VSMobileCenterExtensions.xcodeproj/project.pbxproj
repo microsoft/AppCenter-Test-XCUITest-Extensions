@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */; };
-		894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */; };
 		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
 		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */; };
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
-		89959ACC1E4DFACD006B292B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895C8FA01E4DE27B0094FCE4 /* Info.plist */; };
 		F51BDB7F1F60406C000E6BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */; };
 		F51BDB821F6041A6000E6BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB801F6041A6000E6BDE /* Main.storyboard */; };
 		F5810D711F6038D800996525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D701F6038D800996525 /* AppDelegate.m */; };
@@ -29,13 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		897934E01E4CD1DA00546131 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 897934BE1E4CD03300546131 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 897934C61E4CD03300546131;
-			remoteInfo = XCUITestExtensions;
-		};
 		F5810D881F6038D800996525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 897934BE1E4CD03300546131 /* Project object */;
@@ -47,16 +36,11 @@
 
 /* Begin PBXFileReference section */
 		893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensions-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA01E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTests.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTests.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensionsTests-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA51E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		895C8FA61E4DE27B0094FCE4 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA71E4DE27B0094FCE4 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = VSMobileCenterExtensions.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSMobileCenterExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSMobileCenterExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897934E61E4CD2A800546131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F51BDB7E1F60406C000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51BDB811F6041A6000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,14 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897934D71E4CD1DA00546131 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F5810D6A1F6038D800996525 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,17 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				895C8FA01E4DE27B0094FCE4 /* Info.plist */,
-				895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */,
-				895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */,
-				895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */,
-			);
-			path = VSMobileCenterExtensionsTests;
-			sourceTree = "<group>";
-		};
 		895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */,
-				895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */,
 				F5810D6E1F6038D800996525 /* TestApp */,
 				897934C81E4CD03300546131 /* Products */,
 				897934E51E4CD2A800546131 /* Frameworks */,
@@ -151,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */,
-				897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */,
 				F5810D6D1F6038D800996525 /* Flowers.app */,
 				F5810D871F6038D800996525 /* FlowersUITests.xctest */,
 			);
@@ -238,24 +201,6 @@
 			productReference = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */;
-			buildPhases = (
-				897934D61E4CD1DA00546131 /* Sources */,
-				897934D71E4CD1DA00546131 /* Frameworks */,
-				897934D81E4CD1DA00546131 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				897934E11E4CD1DA00546131 /* PBXTargetDependency */,
-			);
-			name = VSMobileCenterExtensionsTests;
-			productName = XCUITestExtensionsTests;
-			productReference = 897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		F5810D6C1F6038D800996525 /* Flowers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5810D8E1F6038D800996525 /* Build configuration list for PBXNativeTarget "Flowers" */;
@@ -306,11 +251,6 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
-					897934D91E4CD1DA00546131 = {
-						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
-					};
 					F5810D6C1F6038D800996525 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Manual;
@@ -337,7 +277,6 @@
 			projectRoot = "";
 			targets = (
 				897934C61E4CD03300546131 /* VSMobileCenterExtensions */,
-				897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */,
 				F5810D6C1F6038D800996525 /* Flowers */,
 				F5810D861F6038D800996525 /* FlowersUITests */,
 			);
@@ -349,14 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		897934D81E4CD1DA00546131 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89959ACC1E4DFACD006B292B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,15 +319,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897934D61E4CD1DA00546131 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */,
-				894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F5810D691F6038D800996525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,11 +343,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		897934E11E4CD1DA00546131 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 897934C61E4CD03300546131 /* VSMobileCenterExtensions */;
-			targetProxy = 897934E01E4CD1DA00546131 /* PBXContainerItemProxy */;
-		};
 		F5810D891F6038D800996525 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F5810D6C1F6038D800996525 /* Flowers */;
@@ -627,40 +544,6 @@
 			};
 			name = Release;
 		};
-		897934E31E4CD1DA00546131 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		897934E41E4CD1DA00546131 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		F5810D8F1F6038D800996525 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -775,15 +658,6 @@
 			buildConfigurations = (
 				897934D01E4CD03300546131 /* Debug */,
 				897934D11E4CD03300546131 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				897934E31E4CD1DA00546131 /* Debug */,
-				897934E41E4CD1DA00546131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
