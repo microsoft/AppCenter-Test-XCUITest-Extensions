@@ -6,6 +6,7 @@ all:
 
 clean:
 	rm -rf build
+	rm -rf Products
 
 build:
 	bin/make/build.sh

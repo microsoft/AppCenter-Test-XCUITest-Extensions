@@ -1,9 +1,14 @@
 ## macOS
 .DS_Store
 
+## For XTC uploads
+.xtc-credentials
+bin/xtc
+
 ## Build generated
 build/
 DerivedData/
+Products/
 
 ## Various settings
 *.pbxuser
