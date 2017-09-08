@@ -6,7 +6,7 @@ class MCLabelTest: XCTestCase {
     override func setUp() {
         super.setUp()
         self.continueAfterFailure = true
-        XCUIApplication().launch()
+        MCLaunch.launch();
     }
     
     override func tearDown() {
