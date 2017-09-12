@@ -2,20 +2,22 @@
 #import <Foundation/Foundation.h>
 
 /*
- Use
- [MCLabel label:fmt, ...]
- to mark a particular 'test step' in your test. This will also trigger a screenshot.
-
- You can use `label(...)` as a convenience macro instead.
- */
+ Methods for adding labelled steps to tests.  Labeling automatically takes
+ a screenshot and attaches it to the test report.
+*/
 
 @interface MCLabel : NSObject
-+ (void)label:(NSString *)fmt, ...;
 
 /*
- For swift compatibility
+ Objective-C
+*/
++ (void)label:(NSString *)fmt, ...;
+#define label(...) [MCLabel label: __VA_ARGS__]
+
+/*
+ Swift or Objective-C
  */
 + (void)labelStep:(NSString *)msg;
 + (void)labelStep:(NSString *)fmt args:(va_list)args;
-#define label(...) [MCLabel label: __VA_ARGS__]
+
 @end

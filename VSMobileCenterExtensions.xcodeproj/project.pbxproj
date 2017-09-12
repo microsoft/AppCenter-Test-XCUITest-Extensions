@@ -3,44 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */; };
-		894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */; };
 		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
 		895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */; };
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
-		89959ACC1E4DFACD006B292B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895C8FA01E4DE27B0094FCE4 /* Info.plist */; };
+		F51BDB7F1F60406C000E6BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */; };
+		F51BDB821F6041A6000E6BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB801F6041A6000E6BDE /* Main.storyboard */; };
+		F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* MCLaunch.h */; };
+		F556B16C1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
+		F556B16D1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
+		F556B16F1F6265A200F949A6 /* MCLaunchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16E1F6265A200F949A6 /* MCLaunchTest.m */; };
+		F556B1711F62721200F949A6 /* MCLaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556B1701F62721200F949A6 /* MCLaunchTest.swift */; };
+		F5810D711F6038D800996525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D701F6038D800996525 /* AppDelegate.m */; };
+		F5810D741F6038D800996525 /* CircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D731F6038D800996525 /* CircleController.m */; };
+		F5810D771F6038D800996525 /* SquareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D761F6038D800996525 /* SquareController.m */; };
+		F5810D7C1F6038D800996525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5810D7B1F6038D800996525 /* Assets.xcassets */; };
+		F5810D821F6038D800996525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D811F6038D800996525 /* main.m */; };
+		F5810D991F6039A600996525 /* MCLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D971F6039A600996525 /* MCLabelTest.m */; };
+		F5F5A25A1F604BFB00FC3A0E /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
+		F5F5A25C1F604CF900FC3A0E /* MCLabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		897934E01E4CD1DA00546131 /* PBXContainerItemProxy */ = {
+		F5810D881F6038D800996525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 897934BE1E4CD03300546131 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 897934C61E4CD03300546131;
-			remoteInfo = XCUITestExtensions;
+			remoteGlobalIDString = F5810D6C1F6038D800996525;
+			remoteInfo = MCFlowers;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		893607961E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensions-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA01E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTests.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTests.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "VSMobileCenterExtensionsTests-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA51E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		895C8FA61E4DE27B0094FCE4 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA71E4DE27B0094FCE4 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = VSMobileCenterExtensions.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSMobileCenterExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VSMobileCenterExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897934E61E4CD2A800546131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F51BDB7E1F60406C000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F51BDB811F6041A6000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F556B1691F625FE500F949A6 /* MCLaunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCLaunch.h; sourceTree = "<group>"; };
+		F556B16A1F625FE500F949A6 /* MCLaunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLaunch.m; sourceTree = "<group>"; };
+		F556B16E1F6265A200F949A6 /* MCLaunchTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLaunchTest.m; sourceTree = "<group>"; };
+		F556B1701F62721200F949A6 /* MCLaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCLaunchTest.swift; sourceTree = "<group>"; };
+		F5810D6D1F6038D800996525 /* Flowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5810D6F1F6038D800996525 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5810D701F6038D800996525 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5810D721F6038D800996525 /* CircleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleController.h; sourceTree = "<group>"; };
+		F5810D731F6038D800996525 /* CircleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleController.m; sourceTree = "<group>"; };
+		F5810D751F6038D800996525 /* SquareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareController.h; sourceTree = "<group>"; };
+		F5810D761F6038D800996525 /* SquareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareController.m; sourceTree = "<group>"; };
+		F5810D7B1F6038D800996525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5810D801F6038D800996525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5810D811F6038D800996525 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5810D871F6038D800996525 /* FlowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5810D961F6039A600996525 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5810D971F6039A600996525 /* MCLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTest.m; sourceTree = "<group>"; };
+		F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTest.swift; sourceTree = "<group>"; };
+		F5F5A25D1F60510A00FC3A0E /* FlowersUITest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowersUITest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,32 +79,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897934D71E4CD1DA00546131 /* Frameworks */ = {
+		F5810D6A1F6038D800996525 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897934DF1E4CD1DA00546131 /* VSMobileCenterExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5810D841F6038D800996525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				895C8FA01E4DE27B0094FCE4 /* Info.plist */,
-				895C8FA11E4DE27B0094FCE4 /* MCLabelTests.m */,
-				895C8FA21E4DE27B0094FCE4 /* MCLabelTests.swift */,
-				895C8FA31E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests-Bridging-Header.h */,
-			);
-			path = VSMobileCenterExtensionsTests;
-			sourceTree = "<group>";
-		};
 		895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				895C8FA51E4DE27B0094FCE4 /* Info.plist */,
+				F556B1691F625FE500F949A6 /* MCLaunch.h */,
+				F556B16A1F625FE500F949A6 /* MCLaunch.m */,
 				895C8FA61E4DE27B0094FCE4 /* MCLabel.h */,
 				895C8FA71E4DE27B0094FCE4 /* MCLabel.m */,
 				895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */,
@@ -90,17 +114,20 @@
 			isa = PBXGroup;
 			children = (
 				895C8FA41E4DE27B0094FCE4 /* VSMobileCenterExtensions */,
-				895C8F9F1E4DE27B0094FCE4 /* VSMobileCenterExtensionsTests */,
+				F5810D6E1F6038D800996525 /* TestApp */,
 				897934C81E4CD03300546131 /* Products */,
 				897934E51E4CD2A800546131 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		897934C81E4CD03300546131 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */,
-				897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */,
+				F5810D6D1F6038D800996525 /* Flowers.app */,
+				F5810D871F6038D800996525 /* FlowersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +140,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F5810D6E1F6038D800996525 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F5810D941F6039A600996525 /* Tests */,
+				F5810D6F1F6038D800996525 /* AppDelegate.h */,
+				F5810D701F6038D800996525 /* AppDelegate.m */,
+				F5810D721F6038D800996525 /* CircleController.h */,
+				F5810D731F6038D800996525 /* CircleController.m */,
+				F5810D751F6038D800996525 /* SquareController.h */,
+				F5810D761F6038D800996525 /* SquareController.m */,
+				F51BDB801F6041A6000E6BDE /* Main.storyboard */,
+				F5810D7B1F6038D800996525 /* Assets.xcassets */,
+				F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */,
+				F5810D801F6038D800996525 /* Info.plist */,
+				F5810D811F6038D800996525 /* main.m */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		F5810D941F6039A600996525 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5810D951F6039A600996525 /* UI */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F5810D951F6039A600996525 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F5F5A25D1F60510A00FC3A0E /* FlowersUITest-Bridging-Header.h */,
+				F5810D961F6039A600996525 /* Info.plist */,
+				F5810D971F6039A600996525 /* MCLabelTest.m */,
+				F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */,
+				F556B16E1F6265A200F949A6 /* MCLaunchTest.m */,
+				F556B1701F62721200F949A6 /* MCLaunchTest.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -123,6 +190,7 @@
 				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
 				893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */,
 				895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */,
+				F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,23 +215,40 @@
 			productReference = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */ = {
+		F5810D6C1F6038D800996525 /* Flowers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */;
+			buildConfigurationList = F5810D8E1F6038D800996525 /* Build configuration list for PBXNativeTarget "Flowers" */;
 			buildPhases = (
-				897934D61E4CD1DA00546131 /* Sources */,
-				897934D71E4CD1DA00546131 /* Frameworks */,
-				897934D81E4CD1DA00546131 /* Resources */,
+				F5810D691F6038D800996525 /* Sources */,
+				F5810D6A1F6038D800996525 /* Frameworks */,
+				F5810D6B1F6038D800996525 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				897934E11E4CD1DA00546131 /* PBXTargetDependency */,
 			);
-			name = VSMobileCenterExtensionsTests;
-			productName = XCUITestExtensionsTests;
-			productReference = 897934DA1E4CD1DA00546131 /* VSMobileCenterExtensionsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = Flowers;
+			productName = MCFlowers;
+			productReference = F5810D6D1F6038D800996525 /* Flowers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5810D861F6038D800996525 /* FlowersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5810D911F6038D800996525 /* Build configuration list for PBXNativeTarget "FlowersUITests" */;
+			buildPhases = (
+				F5810D831F6038D800996525 /* Sources */,
+				F5810D841F6038D800996525 /* Frameworks */,
+				F5810D851F6038D800996525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5810D891F6038D800996525 /* PBXTargetDependency */,
+			);
+			name = FlowersUITests;
+			productName = MCFlowersUITests;
+			productReference = F5810D871F6038D800996525 /* FlowersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -171,29 +256,34 @@
 		897934BE1E4CD03300546131 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = microsoft;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Microsoft;
 				TargetAttributes = {
 					897934C61E4CD03300546131 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FYD86LA7RE;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
-					897934D91E4CD1DA00546131 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FYD86LA7RE;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+					F5810D6C1F6038D800996525 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					F5810D861F6038D800996525 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						TestTargetID = F5810D6C1F6038D800996525;
 					};
 				};
 			};
 			buildConfigurationList = 897934C11E4CD03300546131 /* Build configuration list for PBXProject "VSMobileCenterExtensions" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 897934BD1E4CD03300546131;
 			productRefGroup = 897934C81E4CD03300546131 /* Products */;
@@ -201,7 +291,8 @@
 			projectRoot = "";
 			targets = (
 				897934C61E4CD03300546131 /* VSMobileCenterExtensions */,
-				897934D91E4CD1DA00546131 /* VSMobileCenterExtensionsTests */,
+				F5810D6C1F6038D800996525 /* Flowers */,
+				F5810D861F6038D800996525 /* FlowersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,11 +305,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897934D81E4CD1DA00546131 /* Resources */ = {
+		F5810D6B1F6038D800996525 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89959ACC1E4DFACD006B292B /* Info.plist in Resources */,
+				F51BDB7F1F60406C000E6BDE /* LaunchScreen.storyboard in Resources */,
+				F5810D7C1F6038D800996525 /* Assets.xcassets in Resources */,
+				F51BDB821F6041A6000E6BDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5810D851F6038D800996525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,28 +329,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F556B16C1F625FE500F949A6 /* MCLaunch.m in Sources */,
 				895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		897934D61E4CD1DA00546131 /* Sources */ = {
+		F5810D691F6038D800996525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				894347D21E4DF20400F7D795 /* MCLabelTests.swift in Sources */,
-				894347D11E4DF20000F7D795 /* MCLabelTests.m in Sources */,
+				F5810D771F6038D800996525 /* SquareController.m in Sources */,
+				F5810D711F6038D800996525 /* AppDelegate.m in Sources */,
+				F5810D821F6038D800996525 /* main.m in Sources */,
+				F5810D741F6038D800996525 /* CircleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5810D831F6038D800996525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F556B1711F62721200F949A6 /* MCLaunchTest.swift in Sources */,
+				F556B16F1F6265A200F949A6 /* MCLaunchTest.m in Sources */,
+				F556B16D1F625FE500F949A6 /* MCLaunch.m in Sources */,
+				F5F5A25A1F604BFB00FC3A0E /* MCLabel.m in Sources */,
+				F5F5A25C1F604CF900FC3A0E /* MCLabelTest.swift in Sources */,
+				F5810D991F6039A600996525 /* MCLabelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		897934E11E4CD1DA00546131 /* PBXTargetDependency */ = {
+		F5810D891F6038D800996525 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 897934C61E4CD03300546131 /* VSMobileCenterExtensions */;
-			targetProxy = 897934E01E4CD1DA00546131 /* PBXContainerItemProxy */;
+			target = F5810D6C1F6038D800996525 /* Flowers */;
+			targetProxy = F5810D881F6038D800996525 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51BDB7E1F60406C000E6BDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F51BDB801F6041A6000E6BDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51BDB811F6041A6000E6BDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		897934CD1E4CD03300546131 /* Debug */ = {
@@ -262,7 +397,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -270,7 +407,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -313,7 +454,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -321,7 +464,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -339,9 +486,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -352,11 +500,17 @@
 		897934D01E4CD03300546131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+				);
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FYD86LA7RE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -368,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensions/VSMobileCenterExtensions-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -378,11 +533,17 @@
 		897934D11E4CD03300546131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+				);
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FYD86LA7RE;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -394,38 +555,107 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensions/VSMobileCenterExtensions-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		897934E31E4CD1DA00546131 /* Debug */ = {
+		F5810D8F1F6038D800996525 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.MCFlowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE = "71f55f13-29cf-4a31-84e7-7888aa01ce15";
+				PROVISIONING_PROFILE_SPECIFIER = MobileCenterXCUITestExtensionTestAppDevelopment;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		897934E41E4CD1DA00546131 /* Release */ = {
+		F5810D901F6038D800996525 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FYD86LA7RE;
-				INFOPLIST_FILE = VSMobileCenterExtensions/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.VSMobileCenterExtensionsTests;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.MCFlowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "VSMobileCenterExtensionsTests/VSMobileCenterExtensionsTests-Bridging-Header.h";
+				PROVISIONING_PROFILE = "71f55f13-29cf-4a31-84e7-7888aa01ce15";
+				PROVISIONING_PROFILE_SPECIFIER = MobileCenterXCUITestExtensionTestAppDevelopment;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5810D921F6038D800996525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/VSMobileCenterExtensions";
+				INFOPLIST_FILE = TestApp/Tests/UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.MCFlowersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71f55f13-29cf-4a31-84e7-7888aa01ce15";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftWildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Tests/UI/FlowersUITest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flowers;
+			};
+			name = Debug;
+		};
+		F5810D931F6038D800996525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/VSMobileCenterExtensions";
+				INFOPLIST_FILE = TestApp/Tests/UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.MCFlowersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71f55f13-29cf-4a31-84e7-7888aa01ce15";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftWildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Tests/UI/FlowersUITest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flowers;
 			};
 			name = Release;
 		};
@@ -450,11 +680,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897934E21E4CD1DA00546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensionsTests" */ = {
+		F5810D8E1F6038D800996525 /* Build configuration list for PBXNativeTarget "Flowers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				897934E31E4CD1DA00546131 /* Debug */,
-				897934E41E4CD1DA00546131 /* Release */,
+				F5810D8F1F6038D800996525 /* Debug */,
+				F5810D901F6038D800996525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5810D911F6038D800996525 /* Build configuration list for PBXNativeTarget "FlowersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5810D921F6038D800996525 /* Debug */,
+				F5810D931F6038D800996525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,8 +9,9 @@ Pod::Spec.new do |s|
   s.authors      = { 'Chris Fuentes' => 'chfuen@microsoft.com' }
   s.summary      = 'Extension library to add value to XCUITests run in Xamarin Test Cloud/Visual Studio Mobile Center'
   s.source       = { :git => 'https://github.com/xamarinhq/test-cloud-xcuitest-extensions.git', :tag => version }
-  s.source_files = 'VSMobileCenterExtensions/*.{h,m}'
-  s.ios.framework    = 'XCTest'
+  s.ios.source_files = 'VSMobileCenterExtensions/*.{h,m}'
+  s.ios.public_header_files = "VSMobileCenterExtensions/**/*.h"
+  s.ios.framework = 'XCTest'
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
