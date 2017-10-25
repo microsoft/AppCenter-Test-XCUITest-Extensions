@@ -14,7 +14,7 @@
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
 		F51BDB7F1F60406C000E6BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */; };
 		F51BDB821F6041A6000E6BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB801F6041A6000E6BDE /* Main.storyboard */; };
-		F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* MCLaunch.h */; };
+		F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* MCLaunch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F556B16C1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
 		F556B16D1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
 		F556B16F1F6265A200F949A6 /* MCLaunchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16E1F6265A200F949A6 /* MCLaunchTest.m */; };
@@ -188,9 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
+				F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */,
 				893607971E9539F0006F2956 /* VSMobileCenterExtensions-Bridging-Header.h in Headers */,
 				895C8FB01E4DE27B0094FCE4 /* VSMobileCenterExtensions.h in Headers */,
-				F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
