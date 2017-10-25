@@ -4,7 +4,9 @@ source bin/xcode.sh
 
 function default_sim_udid {
   if [ $(xcode_gte_9) = "true" ]; then
-    local name="iPhone 7 (11.0)"
+    local version=$(xcode_version)
+    local minor=$(echo $version | cut -d. -f2)
+    local name="iPhone 7 (11.${minor})"
   else
     local name="iPhone 7 (10.3.1)"
   fi
