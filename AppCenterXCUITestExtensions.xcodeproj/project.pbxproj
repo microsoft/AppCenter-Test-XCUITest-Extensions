@@ -45,7 +45,7 @@
 		895C8FA61E4DE27B0094FCE4 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA71E4DE27B0094FCE4 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA81E4DE27B0094FCE4 /* VSMobileCenterExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = VSMobileCenterExtensions.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VSMobileCenterExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		897934C71E4CD03300546131 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCenterXCUITestExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897934E61E4CD2A800546131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F51BDB7E1F60406C000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51BDB811F6041A6000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		897934C81E4CD03300546131 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */,
+				897934C71E4CD03300546131 /* AppCenterXCUITestExtensions.framework */,
 				F5810D6D1F6038D800996525 /* Flowers.app */,
 				F5810D871F6038D800996525 /* FlowersUITests.xctest */,
 			);
@@ -197,9 +197,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		897934C61E4CD03300546131 /* VSMobileCenterExtensions */ = {
+		897934C61E4CD03300546131 /* AppCenterXCUITestExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensions" */;
+			buildConfigurationList = 897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "AppCenterXCUITestExtensions" */;
 			buildPhases = (
 				897934C21E4CD03300546131 /* Sources */,
 				897934C31E4CD03300546131 /* Frameworks */,
@@ -210,9 +210,9 @@
 			);
 			dependencies = (
 			);
-			name = VSMobileCenterExtensions;
+			name = AppCenterXCUITestExtensions;
 			productName = XCUITestExtensions;
-			productReference = 897934C71E4CD03300546131 /* VSMobileCenterExtensions.framework */;
+			productReference = 897934C71E4CD03300546131 /* AppCenterXCUITestExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F5810D6C1F6038D800996525 /* Flowers */ = {
@@ -277,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 897934C11E4CD03300546131 /* Build configuration list for PBXProject "VSMobileCenterExtensions" */;
+			buildConfigurationList = 897934C11E4CD03300546131 /* Build configuration list for PBXProject "AppCenterXCUITestExtensions" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -290,7 +290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				897934C61E4CD03300546131 /* VSMobileCenterExtensions */,
+				897934C61E4CD03300546131 /* AppCenterXCUITestExtensions */,
 				F5810D6C1F6038D800996525 /* Flowers */,
 				F5810D861F6038D800996525 /* FlowersUITests */,
 			);
@@ -662,7 +662,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		897934C11E4CD03300546131 /* Build configuration list for PBXProject "VSMobileCenterExtensions" */ = {
+		897934C11E4CD03300546131 /* Build configuration list for PBXProject "AppCenterXCUITestExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897934CD1E4CD03300546131 /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "VSMobileCenterExtensions" */ = {
+		897934CF1E4CD03300546131 /* Build configuration list for PBXNativeTarget "AppCenterXCUITestExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				897934D01E4CD03300546131 /* Debug */,

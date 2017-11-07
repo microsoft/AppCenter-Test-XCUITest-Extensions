@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "897934C61E4CD03300546131"
-               BuildableName = "VSMobileCenterExtensions.framework"
-               BlueprintName = "VSMobileCenterExtensions"
-               ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+               BuildableName = "AppCenterXCUITestExtensions.framework"
+               BlueprintName = "AppCenterXCUITestExtensions"
+               ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "897934C61E4CD03300546131"
-            BuildableName = "VSMobileCenterExtensions.framework"
-            BlueprintName = "VSMobileCenterExtensions"
-            ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+            BuildableName = "AppCenterXCUITestExtensions.framework"
+            BlueprintName = "AppCenterXCUITestExtensions"
+            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "897934C61E4CD03300546131"
-            BuildableName = "VSMobileCenterExtensions.framework"
-            BlueprintName = "VSMobileCenterExtensions"
-            ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+            BuildableName = "AppCenterXCUITestExtensions.framework"
+            BlueprintName = "AppCenterXCUITestExtensions"
+            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
