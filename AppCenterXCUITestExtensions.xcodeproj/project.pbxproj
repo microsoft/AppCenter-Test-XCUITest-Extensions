@@ -187,6 +187,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52543D21FB32B3800BD517A /* AppCenterXCUITestExtensions.h in Headers */,
+				F52543D31FB32B3D00BD517A /* ACTLaunch.h in Headers */,
+				F52543D41FB32B4200BD517A /* ACTLabel.h in Headers */,
+				F52543D51FB32B4800BD517A /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
