@@ -1,6 +1,6 @@
 
 #import <XCTest/XCTest.h>
-#import "MCLabel.h"
+#import "ACTLabel.h"
 
 /*
  This label prefix signifies to the event processor that this particular log
@@ -35,7 +35,7 @@ typedef void (^activityBlock)(XCActivityRecord *activityRecord);
 XCTestCase *_XCTCurrentTestCase(void);
 void _XCINFLog(NSString *msg);
 
-@implementation MCLabel
+@implementation ACTLabel
 
 + (void)label:(NSString *)fmt, ... {
     va_list args;
@@ -76,14 +76,14 @@ void _XCINFLog(NSString *msg);
 
     XCAXClient_iOS *client = [XCAXClient_iOS sharedClient];
     if (!client) {
-        [MCLabel labelFailedWithError:@"Unable to fetch Accessibility Client."
+        [ACTLabel labelFailedWithError:@"Unable to fetch Accessibility Client."
                          labelMessage:message];
         return;
     }
 
     NSData *screenshotData = [client screenshotData];
     if (!screenshotData) {
-        [MCLabel labelFailedWithError:@"Unable to fetch screenshot data from Accessibility Client."
+        [ACTLabel labelFailedWithError:@"Unable to fetch screenshot data from Accessibility Client."
                          labelMessage:message];
         return;
     }
@@ -94,7 +94,7 @@ void _XCINFLog(NSString *msg);
 // If this does not produce the correct results, there is this alternative
 // https://gist.github.com/jmoody/f28cdfe69dd69e06b29122d8e3492340
 + (void)automaticallyAttachScreenshotToActivityRecord:(XCActivityRecord *)activityRecord {
-    [MCLabel XCAttachmentKeepAlways];
+    [ACTLabel XCAttachmentKeepAlways];
     Class klass = NSClassFromString(@"XCActivityRecord");
     SEL selector = NSSelectorFromString(@"attachAutomaticScreenshot");
 
@@ -139,14 +139,14 @@ void _XCINFLog(NSString *msg);
 + (void)attachScreenshotToActivityRecord:(XCActivityRecord *)activityRecord
                                  message:(NSString *)message {
     if (!activityRecord) {
-        [MCLabel labelFailedWithError:@"No XCActivityRecord currently exists."
+        [ACTLabel labelFailedWithError:@"No XCActivityRecord currently exists."
                          labelMessage:message];
-    } else if ([MCLabel XCActivityRespondsToAttachAutomaticScreenshot:activityRecord]) {
+    } else if ([ACTLabel XCActivityRespondsToAttachAutomaticScreenshot:activityRecord]) {
         // Xcode >= 9
-        [MCLabel automaticallyAttachScreenshotToActivityRecord:activityRecord];
+        [ACTLabel automaticallyAttachScreenshotToActivityRecord:activityRecord];
     } else {
         // Xcode < 9
-        [MCLabel attachScreenshotUsingAXClientToActivityRecord:activityRecord
+        [ACTLabel attachScreenshotUsingAXClientToActivityRecord:activityRecord
                                                        message:message];
     }
 }
@@ -157,7 +157,7 @@ void _XCINFLog(NSString *msg);
 + (void)_label:(NSString *)message {
     XCTestCase *testCase = [self currentTestCase];
     if (testCase == nil) {
-        [MCLabel labelFailedWithError:@"Unable to locate current test case."
+        [ACTLabel labelFailedWithError:@"Unable to locate current test case."
                          labelMessage:message];
     } else {
         /*
@@ -170,7 +170,7 @@ void _XCINFLog(NSString *msg);
                                  LABEL_PREFIX,
                                  message]
          block:^(XCActivityRecord *activityRecord) {
-             [MCLabel attachScreenshotToActivityRecord:activityRecord
+             [ACTLabel attachScreenshotToActivityRecord:activityRecord
                                                message:message];
          }];
     }

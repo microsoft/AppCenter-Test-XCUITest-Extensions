@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		893607971E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* MCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
-		895C8FB01E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		897934ED1E4CD51E00546131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897934E61E4CD2A800546131 /* XCTest.framework */; };
+		F508EAD11FB33018002D9747 /* ACTLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* ACTLaunch.m */; };
+		F508EAD21FB3301C002D9747 /* ACTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* ACTLabel.m */; };
 		F51BDB7F1F60406C000E6BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB7D1F60406C000E6BDE /* LaunchScreen.storyboard */; };
 		F51BDB821F6041A6000E6BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51BDB801F6041A6000E6BDE /* Main.storyboard */; };
-		F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* MCLaunch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F556B16C1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
-		F556B16D1F625FE500F949A6 /* MCLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* MCLaunch.m */; };
-		F556B16F1F6265A200F949A6 /* MCLaunchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16E1F6265A200F949A6 /* MCLaunchTest.m */; };
-		F556B1711F62721200F949A6 /* MCLaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556B1701F62721200F949A6 /* MCLaunchTest.swift */; };
+		F52543D21FB32B3800BD517A /* AppCenterXCUITestExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F52543D31FB32B3D00BD517A /* ACTLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* ACTLaunch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F52543D41FB32B4200BD517A /* ACTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* ACTLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F52543D51FB32B4800BD517A /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5810D711F6038D800996525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D701F6038D800996525 /* AppDelegate.m */; };
 		F5810D741F6038D800996525 /* CircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D731F6038D800996525 /* CircleController.m */; };
 		F5810D771F6038D800996525 /* SquareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D761F6038D800996525 /* SquareController.m */; };
 		F5810D7C1F6038D800996525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5810D7B1F6038D800996525 /* Assets.xcassets */; };
 		F5810D821F6038D800996525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D811F6038D800996525 /* main.m */; };
-		F5810D991F6039A600996525 /* MCLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D971F6039A600996525 /* MCLabelTest.m */; };
-		F5F5A25A1F604BFB00FC3A0E /* MCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* MCLabel.m */; };
-		F5F5A25C1F604CF900FC3A0E /* MCLabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */; };
+		F5BAFFCF1FB32EC100F41324 /* ACTLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D971F6039A600996525 /* ACTLabelTest.m */; };
+		F5BAFFD01FB32EC100F41324 /* ACTLabelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F5A25B1F604CF900FC3A0E /* ACTLabelTest.swift */; };
+		F5BAFFD11FB32EC100F41324 /* ACTLaunchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16E1F6265A200F949A6 /* ACTLaunchTest.m */; };
+		F5BAFFD21FB32EC100F41324 /* ACTLaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556B1701F62721200F949A6 /* ACTLaunchTest.swift */; };
+		F5BAFFD31FB32ECD00F41324 /* ACTLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F556B16A1F625FE500F949A6 /* ACTLaunch.m */; };
+		F5BAFFD41FB32ED500F41324 /* ACTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 895C8FA71E4DE27B0094FCE4 /* ACTLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,34 +40,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "AppCenterXCUITestExtensions-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "AppCenterXCUITestExtensions-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		895C8FA51E4DE27B0094FCE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		895C8FA61E4DE27B0094FCE4 /* MCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = MCLabel.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA71E4DE27B0094FCE4 /* MCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabel.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
-		895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = AppCenterXCUITestExtensions.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		895C8FA61E4DE27B0094FCE4 /* ACTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ACTLabel.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		895C8FA71E4DE27B0094FCE4 /* ACTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACTLabel.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppCenterXCUITestExtensions.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		897934C71E4CD03300546131 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCenterXCUITestExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897934E61E4CD2A800546131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F51BDB7E1F60406C000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51BDB811F6041A6000E6BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F556B1691F625FE500F949A6 /* MCLaunch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCLaunch.h; sourceTree = "<group>"; };
-		F556B16A1F625FE500F949A6 /* MCLaunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLaunch.m; sourceTree = "<group>"; };
-		F556B16E1F6265A200F949A6 /* MCLaunchTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLaunchTest.m; sourceTree = "<group>"; };
-		F556B1701F62721200F949A6 /* MCLaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCLaunchTest.swift; sourceTree = "<group>"; };
+		F556B1691F625FE500F949A6 /* ACTLaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ACTLaunch.h; sourceTree = "<group>"; usesTabs = 0; };
+		F556B16A1F625FE500F949A6 /* ACTLaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACTLaunch.m; sourceTree = "<group>"; usesTabs = 0; };
+		F556B16E1F6265A200F949A6 /* ACTLaunchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACTLaunchTest.m; sourceTree = "<group>"; usesTabs = 0; };
+		F556B1701F62721200F949A6 /* ACTLaunchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ACTLaunchTest.swift; sourceTree = "<group>"; usesTabs = 0; };
 		F5810D6D1F6038D800996525 /* Flowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5810D6F1F6038D800996525 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F5810D701F6038D800996525 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5810D721F6038D800996525 /* CircleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleController.h; sourceTree = "<group>"; };
-		F5810D731F6038D800996525 /* CircleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleController.m; sourceTree = "<group>"; };
-		F5810D751F6038D800996525 /* SquareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquareController.h; sourceTree = "<group>"; };
-		F5810D761F6038D800996525 /* SquareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquareController.m; sourceTree = "<group>"; };
+		F5810D6F1F6038D800996525 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; usesTabs = 0; };
+		F5810D701F6038D800996525 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; usesTabs = 0; };
+		F5810D721F6038D800996525 /* CircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CircleController.h; sourceTree = "<group>"; usesTabs = 0; };
+		F5810D731F6038D800996525 /* CircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CircleController.m; sourceTree = "<group>"; usesTabs = 0; };
+		F5810D751F6038D800996525 /* SquareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SquareController.h; sourceTree = "<group>"; usesTabs = 0; };
+		F5810D761F6038D800996525 /* SquareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SquareController.m; sourceTree = "<group>"; usesTabs = 0; };
 		F5810D7B1F6038D800996525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5810D801F6038D800996525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5810D811F6038D800996525 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5810D811F6038D800996525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; usesTabs = 0; };
 		F5810D871F6038D800996525 /* FlowersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5810D961F6039A600996525 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5810D971F6039A600996525 /* MCLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLabelTest.m; sourceTree = "<group>"; };
-		F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCLabelTest.swift; sourceTree = "<group>"; };
-		F5F5A25D1F60510A00FC3A0E /* FlowersUITest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowersUITest-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5810D971F6039A600996525 /* ACTLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACTLabelTest.m; sourceTree = "<group>"; usesTabs = 0; };
+		F5F5A25B1F604CF900FC3A0E /* ACTLabelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ACTLabelTest.swift; sourceTree = "<group>"; usesTabs = 0; };
+		F5F5A25D1F60510A00FC3A0E /* FlowersUITest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "FlowersUITest-Bridging-Header.h"; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,13 @@
 		895C8FA41E4DE27B0094FCE4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				895C8FA51E4DE27B0094FCE4 /* Info.plist */,
-				F556B1691F625FE500F949A6 /* MCLaunch.h */,
-				F556B16A1F625FE500F949A6 /* MCLaunch.m */,
-				895C8FA61E4DE27B0094FCE4 /* MCLabel.h */,
-				895C8FA71E4DE27B0094FCE4 /* MCLabel.m */,
+				F556B1691F625FE500F949A6 /* ACTLaunch.h */,
+				F556B16A1F625FE500F949A6 /* ACTLaunch.m */,
+				895C8FA61E4DE27B0094FCE4 /* ACTLabel.h */,
+				895C8FA71E4DE27B0094FCE4 /* ACTLabel.m */,
 				895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */,
 				893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */,
+				895C8FA51E4DE27B0094FCE4 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -171,11 +171,11 @@
 			isa = PBXGroup;
 			children = (
 				F5F5A25D1F60510A00FC3A0E /* FlowersUITest-Bridging-Header.h */,
+				F5810D971F6039A600996525 /* ACTLabelTest.m */,
+				F5F5A25B1F604CF900FC3A0E /* ACTLabelTest.swift */,
+				F556B16E1F6265A200F949A6 /* ACTLaunchTest.m */,
+				F556B1701F62721200F949A6 /* ACTLaunchTest.swift */,
 				F5810D961F6039A600996525 /* Info.plist */,
-				F5810D971F6039A600996525 /* MCLabelTest.m */,
-				F5F5A25B1F604CF900FC3A0E /* MCLabelTest.swift */,
-				F556B16E1F6265A200F949A6 /* MCLaunchTest.m */,
-				F556B1701F62721200F949A6 /* MCLaunchTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -187,10 +187,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895C8FAE1E4DE27B0094FCE4 /* MCLabel.h in Headers */,
-				F556B16B1F625FE500F949A6 /* MCLaunch.h in Headers */,
-				893607971E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */,
-				895C8FB01E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F556B16C1F625FE500F949A6 /* MCLaunch.m in Sources */,
-				895C8FAF1E4DE27B0094FCE4 /* MCLabel.m in Sources */,
+				F5BAFFD31FB32ECD00F41324 /* ACTLaunch.m in Sources */,
+				F5BAFFD41FB32ED500F41324 /* ACTLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,12 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F556B1711F62721200F949A6 /* MCLaunchTest.swift in Sources */,
-				F556B16F1F6265A200F949A6 /* MCLaunchTest.m in Sources */,
-				F556B16D1F625FE500F949A6 /* MCLaunch.m in Sources */,
-				F5F5A25A1F604BFB00FC3A0E /* MCLabel.m in Sources */,
-				F5F5A25C1F604CF900FC3A0E /* MCLabelTest.swift in Sources */,
-				F5810D991F6039A600996525 /* MCLabelTest.m in Sources */,
+				F508EAD11FB33018002D9747 /* ACTLaunch.m in Sources */,
+				F508EAD21FB3301C002D9747 /* ACTLabel.m in Sources */,
+				F5BAFFCF1FB32EC100F41324 /* ACTLabelTest.m in Sources */,
+				F5BAFFD21FB32EC100F41324 /* ACTLaunchTest.swift in Sources */,
+				F5BAFFD01FB32EC100F41324 /* ACTLabelTest.swift in Sources */,
+				F5BAFFD11FB32EC100F41324 /* ACTLaunchTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

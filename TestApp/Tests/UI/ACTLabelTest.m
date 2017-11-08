@@ -2,18 +2,18 @@
 #import <XCTest/XCTest.h>
 #import "AppCenterXCUITestExtensions.h"
 
-@interface MCLabelTest : XCTestCase
+@interface ACTLabelTest : XCTestCase
 
 @property (strong) XCUIApplication *app;
 
 @end
 
-@implementation MCLabelTest
+@implementation ACTLabelTest
 
 - (void)setUp {
     [super setUp];
     self.continueAfterFailure = YES;
-    self.app = [MCLaunch launch];
+    self.app = [ACTLaunch launch];
 }
 
 - (void)tearDown {
@@ -22,16 +22,16 @@
     [self.app terminate];
 }
 
-- (void)testMCLabelMacroUsingObjectiveC {
+- (void)testACTLabelMacroUsingObjectiveC {
     label(@"label macro can be called without arguments");
     label(@"label macro can be called with arguments - %@, %@, %@",
           @"ARG0", @(1), @(2.3));
     XCTAssertTrue(YES, "This test should always pass");
 }
 
-- (void)testMCLabelClassMethodsUsingObjectiveC {
-    [MCLabel label:@"label class method can be called without arguments"];
-    [MCLabel label:@"label class method can be called with arguments - %@, %@, %@",
+- (void)testACTLabelClassMethodsUsingObjectiveC {
+    [ACTLabel label:@"label class method can be called without arguments"];
+    [ACTLabel label:@"label class method can be called with arguments - %@, %@, %@",
      @"ARG0", @(1), @(2.3)];
     XCTAssertTrue(YES, "This test should always pass");
 }

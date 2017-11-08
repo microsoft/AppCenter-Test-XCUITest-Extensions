@@ -2,7 +2,7 @@
 import XCTest
 
 
-class MCLaunchTest: XCTestCase {
+class ACTLaunchTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -14,19 +14,19 @@ class MCLaunchTest: XCTestCase {
     }
 
     func testMCLaunchUsingSwift() {
-        let app = MCLaunch.launch()
+        let app = ACTLaunch.launch()
         XCTAssertNotNil(app)
-        MCLabel.labelStep("Given the app launched using MCLaunch.launch from Swift")
+        ACTLabel.labelStep("Given the app launched using ACTLaunch.launch from Swift")
         app?.terminate()
     }
 
     func testMCLaunchApplicationUsingSwift() {
         let app = XCUIApplication();
-        let launched = MCLaunch.launch(app);
+        let launched = ACTLaunch.launch(app);
         XCTAssertEqual(app, launched,
                        "Expected .launch(app): to return the application it" +
                        "passed as an argument.");
-        MCLabel.labelStep("Given app launched using MCLaunch.launch(app) from Swift");
+        ACTLabel.labelStep("Given app launched using ACTLaunch.launch(app) from Swift");
         app.terminate();
     }
 }
