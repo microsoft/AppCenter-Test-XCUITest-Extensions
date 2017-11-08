@@ -1,2 +1,2 @@
 
-#import "VSMobileCenterExtensions.h"
+#import "AppCenterXCUITestExtensions.h"
