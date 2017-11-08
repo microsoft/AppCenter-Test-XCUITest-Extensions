@@ -267,11 +267,12 @@
 					};
 					F5810D6C1F6038D800996525 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 					};
 					F5810D861F6038D800996525 = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Manual;
 						TestTargetID = F5810D6C1F6038D800996525;
 					};
@@ -580,6 +581,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2c79e555-546a-4ae7-a38d-b38e8d6aa4ed";
 				PROVISIONING_PROFILE_SPECIFIER = AppCenterXCUITestExtensionFlowersDevelopment;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -602,6 +605,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2c79e555-546a-4ae7-a38d-b38e8d6aa4ed";
 				PROVISIONING_PROFILE_SPECIFIER = AppCenterXCUITestExtensionFlowersDevelopment;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -627,7 +632,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
 				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Tests/UI/FlowersUITest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Flowers;
 			};
@@ -653,7 +659,8 @@
 				PROVISIONING_PROFILE = "d6c51ccd-3835-4cea-bfca-c16fe296ff86";
 				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
 				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Tests/UI/FlowersUITest-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Flowers;
 			};
