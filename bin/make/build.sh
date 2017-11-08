@@ -19,8 +19,9 @@ info "Will pipe xcodebuild to: ${XC_PIPE}"
 
 set -e -o pipefail
 
-SCHEME=VSMobileCenterExtensions
-FRAMEWORK="${SCHEME}.framework"
+SCHEME="Framework"
+PRODUCT_NAME="AppCenterXCUITestExtensions"
+FRAMEWORK="${PRODUCT_NAME}.framework"
 CONFIG=Release
 
 BUILD_DIR=build/framework
@@ -42,7 +43,7 @@ xcrun xcodebuild \
   -derivedDataPath "${BUILD_DIR}" \
   -SYMROOT="${BUILD_DIR}" \
   -configuration ${CONFIG} \
-  -scheme ${SCHEME} \
+  -scheme "${SCHEME}" \
   ARCHES="armv7 armv7s arm64" \
   VALID_ARCHS="armv7 armv7s arm64" \
   -sdk iphoneos \
@@ -54,7 +55,7 @@ xcrun xcodebuild \
   -derivedDataPath "${BUILD_DIR}" \
   -SYMROOT="${BUILD_DIR}" \
   -configuration ${CONFIG} \
-  -scheme ${SCHEME} \
+  -scheme "${SCHEME}" \
   ARCHES="i386 x86_64" \
   VALLID_ARCHS="i386 x86_64" \
   -sdk iphonesimulator \
@@ -66,9 +67,9 @@ install_with_ditto ${BUILT_ARM} ${INSTALLED_ARM}
 install_with_ditto ${BUILT_X86} ${INSTALLED_X86}
 install_with_ditto ${INSTALLED_ARM} ${INSTALLED_FAT}
 
-ARM="${INSTALLED_ARM}/${SCHEME}"
-X86="${INSTALLED_X86}/${SCHEME}"
-FAT="${INSTALLED_FAT}/${SCHEME}"
+ARM="${INSTALLED_ARM}/${PRODUCT_NAME}"
+X86="${INSTALLED_X86}/${PRODUCT_NAME}"
+FAT="${INSTALLED_FAT}/${PRODUCT_NAME}"
 
 rm "${FAT}"
 
