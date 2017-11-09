@@ -1,9 +1,12 @@
 ## macOS
 .DS_Store
 
-## For XTC uploads
+## For Test Cloud uploads
 .xtc-credentials
 bin/xtc
+
+## For AppCenter uploads
+.appcenter-credentials
 
 ## Build generated
 build/
