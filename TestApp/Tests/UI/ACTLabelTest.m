@@ -23,8 +23,8 @@
 }
 
 - (void)testACTLabelMacroUsingObjectiveC {
-    label(@"label macro can be called without arguments");
-    label(@"label macro can be called with arguments - %@, %@, %@",
+    act_label(@"act_label macro can be called without arguments");
+    act_label(@"act_label macro can be called with arguments - %@, %@, %@",
           @"ARG0", @(1), @(2.3));
     XCTAssertTrue(YES, "This test should always pass");
 }
@@ -38,22 +38,22 @@
 
 - (void)testToggleScreenshots {
     [self.app.buttons[@"Circle"] tap];
-    label(@"When I see the Circle tab");
+    act_label(@"When I see the Circle tab");
 
     XCTAssertNotNil(self.app.images[@"flowers-in-circle"]);
-    label(@"Then I see the flowers in a circle");
+    act_label(@"Then I see the flowers in a circle");
 
     [self.app.buttons[@"Square"] tap];
-    label(@"When I touch the Square tab");
+    act_label(@"When I touch the Square tab");
 
     XCTAssertNotNil(self.app.images[@"flowers-in-square"]);
-    label(@"Then I see the flowers in a square");
+    act_label(@"Then I see the flowers in a square");
 
     [self.app.buttons[@"Circle"] tap];
-    label(@"When I see the Circle tab");
+    act_label(@"When I see the Circle tab");
 
     XCTAssertNotNil(self.app.images[@"flowers-in-circle"]);
-    label(@"Then I see the flowers in a circle");
+    act_label(@"Then I see the flowers in a circle");
 }
 
 @end

@@ -12,7 +12,7 @@
  Objective-C
 */
 + (void)label:(NSString *)fmt, ...;
-#define label(...) [ACTLabel label: __VA_ARGS__]
+#define act_label(...) [ACTLabel label: __VA_ARGS__]
 
 /*
  Swift or Objective-C

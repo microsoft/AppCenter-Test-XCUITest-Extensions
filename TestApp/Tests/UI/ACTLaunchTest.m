@@ -26,7 +26,7 @@
 
 - (void)testACTLaunchClassMethodUsingObjectiveC {
     XCUIApplication *application = [ACTLaunch launch];
-    label(@"Given the app launched using ACTLabel.launch from ObjC");
+    act_label(@"Given the app launched using ACTLabel.launch from ObjC");
     XCTAssertNotNil(application);
     XCUIApplicationState state = [ACTLaunch stateForApplication:application];
     XCTAssertFalse(state == XCUIApplicationStateUnknown);
@@ -38,7 +38,7 @@
     XCTAssertNotNil(application);
 
     XCUIApplication *launched = [ACTLaunch launchApplication:application];
-    label(@"Given the app launched using ACTLabel.launchApplication from ObjC");
+    act_label(@"Given the app launched using ACTLabel.launchApplication from ObjC");
     XCTAssertEqualObjects(application, launched,
                           @"Expected .launchApplication: to return the"
                           "application it was passed as an argument.");
@@ -51,7 +51,7 @@
 - (void)testACTLaunchMacroUsingObjectiveC {
     XCUIApplication *application = act_launch;
     XCTAssertNotNil(application);
-    label(@"Given the app launched using act_launch macro");
+    act_label(@"Given the app launched using act_launch macro");
     XCUIApplicationState state = [ACTLaunch stateForApplication:application];
     XCTAssertFalse(state == XCUIApplicationStateUnknown);
     [application terminate];
@@ -62,7 +62,7 @@
     XCTAssertNotNil(application);
 
     XCUIApplication *launched = act_launch_app(application);
-    label(@"Given the app launched using act_launch_app macro");
+    act_label(@"Given the app launched using act_launch_app macro");
     XCTAssertEqualObjects(application, launched,
                           @"Expected .launchApplication: to return the"
                           "application it was passed as an argument.");

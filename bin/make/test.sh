@@ -104,10 +104,10 @@ function expect_log_text {
 info "Checking log file for expected text"
 
 # Label methods
-expect_log_text "label macro can be called without arguments"
-expect_log_text "label macro can be called with arguments - ARG0, 1, 2.3"
 expect_log_text "label class method can be called without arguments"
 expect_log_text "label class method can be called with arguments - ARG0, 1, 2.3"
+expect_log_text "act_label macro can be called without arguments"
+expect_log_text "act_label macro can be called with arguments - ARG0, 1, 2.3"
 expect_log_text "Given the app has launched"
 expect_log_text "Then I touch the red button 3 times"
 
