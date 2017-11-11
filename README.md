@@ -1,9 +1,9 @@
-## AppCenter XCUITest Extensions
+## Visual Studio App Center XCUITest Extensions
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-AppCenter XCUITest Extensions is an iOS Framework for taking screenshots
-and labeling test steps when running XCUITest test in App Center or
+`AppCenterXCUITestExtensions` is an iOS Framework for taking screenshots
+and labeling test steps when running XCUITest test in Visual Studio App Center or
 Xamarin Test Cloud. At the conclusion of each test method, a label and
 screenshot are automatically generated for the test report. You can
 create additional labels and screenshots to track your app's progress
