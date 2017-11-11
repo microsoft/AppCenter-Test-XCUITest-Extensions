@@ -87,6 +87,7 @@ LOG=$(find "${TEST_DIR}" -type f -name "*_TestSummaries.plist" -print0 | \
   xargs -0 stat -f "%m %N" | sort -rn | head -1 | \
   cut -f2- -d" ")
 
+EXPECTED_LOG_TEXT_FAILED="0"
 function expect_log_text {
   if grep -Fq "[MobileCenterTest]: $1" "${LOG}"; then
     info "Found log message: ${1}"
@@ -96,25 +97,33 @@ function expect_log_text {
     error "  '${1}'"
     error "In log file:"
     error "  ${LOG}"
+    EXPECTED_LOG_TEXT_FAILED="1"
   fi
 }
 
 info "Checking log file for expected text"
 
 # Label methods
-expect_log_text "label macro can be called without arguments"
-expect_log_text "label macro can be called with arguments - ARG0, 1, 2.3"
 expect_log_text "label class method can be called without arguments"
 expect_log_text "label class method can be called with arguments - ARG0, 1, 2.3"
+expect_log_text "act_label macro can be called without arguments"
+expect_log_text "act_label macro can be called with arguments - ARG0, 1, 2.3"
 expect_log_text "Given the app has launched"
 expect_log_text "Then I touch the red button 3 times"
 
 # Launch methods
-expect_log_text "Given the app launched using MCLaunch.launch from Swift"
-expect_log_text "Given app launched using MCLaunch.launch(app) from Swift"
-expect_log_text "Given the app launched using mc_launch_app macro"
-expect_log_text "Given the app launched using mc_launch macro"
-expect_log_text "Given the app launched using MCLabel.launchApplication from ObjC"
-expect_log_text "Given the app launched using MCLabel.launch from ObjC"
+expect_log_text "Given the app launched using ACTLaunch.launch from Swift"
+expect_log_text "Given app launched using ACTLaunch.launch(app) from Swift"
+expect_log_text "Given the app launched using act_launch_app macro"
+expect_log_text "Given the app launched using act_launch macro"
+expect_log_text "Given the app launched using ACTLabel.launchApplication from ObjC"
+expect_log_text "Given the app launched using ACTLabel.launch from ObjC"
 
-info "Done!"
+if [ "${EXPECTED_LOG_TEXT_FAILED}" = "0" ]; then
+  info "Done!"
+else
+  echo ""
+  error "At least one test failed"
+  exit 1
+fi
+

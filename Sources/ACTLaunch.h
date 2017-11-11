@@ -15,18 +15,18 @@ typedef NS_ENUM(NSUInteger, XCUIApplicationState) {
 
 @class XCUIApplication;
 
-@interface MCLaunch : NSObject
+@interface ACTLaunch : NSObject
 
 + (XCUIApplication *)launch;
 + (XCUIApplication *)launchApplication:(XCUIApplication *)application;
 
 // Objective-C only
-#define mc_launch [MCLaunch launch];
-#define mc_launch_app(application) [MCLaunch launchApplication:application]
+#define act_launch [ACTLaunch launch];
+#define act_launch_app(application) [ACTLaunch launchApplication:application]
 
 // Swift Usage
 // launchApplication will be renamed to launch(_:)
-// MCLaunch.launch => XCUIApplication
-// MCLaunch.launch(XCUIApplication()) => XCUIApplication
+// ACTLaunch.launch => XCUIApplication
+// ACTLaunch.launch(XCUIApplication()) => XCUIApplication
 
 @end

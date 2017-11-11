@@ -17,7 +17,7 @@
                BlueprintIdentifier = "F5810D6C1F6038D800996525"
                BuildableName = "Flowers.app"
                BlueprintName = "Flowers"
-               ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+               ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "F5810D861F6038D800996525"
                BuildableName = "FlowersUITests.xctest"
                BlueprintName = "FlowersUITests"
-               ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+               ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,7 +46,7 @@
                BlueprintIdentifier = "F5F5A2611F61161E00FC3A0E"
                BuildableName = "Sample.xctest"
                BlueprintName = "Sample"
-               ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+               ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,7 +56,7 @@
             BlueprintIdentifier = "F5810D6C1F6038D800996525"
             BuildableName = "Flowers.app"
             BlueprintName = "Flowers"
-            ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,7 +80,7 @@
             BlueprintIdentifier = "F5810D6C1F6038D800996525"
             BuildableName = "Flowers.app"
             BlueprintName = "Flowers"
-            ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,7 +99,7 @@
             BlueprintIdentifier = "F5810D6C1F6038D800996525"
             BuildableName = "Flowers.app"
             BlueprintName = "Flowers"
-            ReferencedContainer = "container:VSMobileCenterExtensions.xcodeproj">
+            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

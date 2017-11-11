@@ -17,5 +17,8 @@ pod-lint:
 carthage:
 	bin/make/carthage.sh
 
-test:
-	bin/make/test.sh
+test-x86:
+	bin/make/test.sh x86
+
+test-arm:
+	bin/make/test.sh arm

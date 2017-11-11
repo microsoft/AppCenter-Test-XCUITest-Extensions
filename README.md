@@ -1,273 +1,230 @@
-## VSMobileCenterExtensions
+## AppCenter XCUITest Extensions
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-An extension library for triggering screenshots and marking test steps when
-running XCUITests in Mobile Center or Test Cloud. By default, test steps are
-automatically marked and a screenshot taken at the conclusion of each test
-method.  This library allows you to create labels and screenshots inside
-your test methods.
+AppCenter XCUITest Extensions is an iOS Framework for taking screenshots
+and labeling test steps when running XCUITest test in App Center or
+Xamarin Test Cloud. At the conclusion of each test method, a label and
+screenshot are automatically generated for the test report. You can
+create additional labels and screenshots to track your app's progress
+during a test method.
+
+This framework is _required_ for running XCUITests in App Center and
+Xamarin Test Cloud.
 
 - [Requirements](#requirements)
+- [Using Labels](#using-labels)
 - [Installation](#installation)
-  - [Cocoapods](#cocoapods)
   - [Carthage](#carthage)
-  - [Building from source](#building-from-source)
-- [Usage](#usage)
-  - [Objective-C](#objective-c)
-  - [Swift](#swift)
-- [Preparing Your Application
-  Bundles](#preparing-your-application-bundles)
-- [Uploading Your Tests](#uploading-your-tests)
+  - [Building from source](#building-from-sources)
+  - [Cocoapods](#cocoapods)
+- [Build For Testing](#build-for-testing)
+- [Run Tests in App Center or Xamarin Test Cloud](#run-tests-in-app-center-or-xamarin-test-cloud)
 - [Known Issues](#known-issues)
 
 ### Requirements
 
-* Xcode >= 8.3.3
+* Xcode >= 9.0
 * Sierra or High Sierra
 * iOS >= 9.0
 
-When using Xcode 9.0, you must launch your application using our
-`MCLaunch` API.
+You must launch your application using the `ACTLaunch` API.
 
 ```
 ### Objective-C
 
-XCUIApplication *app = mc_launch
-XCUIApplication *app = mc_launch_app([[XCUIApplication alloc] init]);
+XCUIApplication *app = act_launch
+XCUIApplication *app = act_launch_app([[XCUIApplication alloc] init]);
 
-XCUIApplication *app = [MCLaunch launch];
-XCUIApplication *app = [MCLaunch launchApplication:[[XCUIApplication alloc] init]];
+XCUIApplication *app = [ACTLaunch launch];
+XCUIApplication *app = [ACTLaunch launchApplication:[[XCUIApplication alloc] init]];
 
 ### Swift
 
-let app = MCLaunch.launch();
-let app = MCLaunch.launch(XCUIApplication())
+let app = ACTLaunch.launch();
+let app = ACTLaunch.launch(XCUIApplication())
 ```
+
+### Using Labels
+
+Be sure that you launch your app with the `ACTLaunch` API. See the
+examples in the [Requirements](#requirements) section.
+
+* Objective-C [TestApp/Tests/UI/ACTLabelTest.m](TestApp/Tests/UI/ACTLabelTest.m)
+* Swift [TestApp/Tests/UI/ACTLabelTest.swift](TestApp/Tests/UI/ACTLabelTest.swift)
 
 ### Installation
 
-The extension can be added to your Xcode project using Cocoapods, Carthage,
-or by manually linking the framework to your XCUITest target.
+The extension can be added to your Xcode project using Cocoapods,
+Carthage, or by manually linking the framework to your XCUITest target.
 
-### Cocoapods
+#### Carthage
 
-If you are not already using CocoaPods, we recommend you use Carthage or
-manually link the framework.
-
-1) Ensure you have installed the `cocoapods` gem:
-
-```shell
-$ gem install cocoapods
-```
-
-2) Create a `Podfile` in your Xcode project folder with the following:
-
-```ruby
-use_frameworks! # required for projects with Swift sources
-
-target 'MyUITestTarget' do pod 'VSMobileCenterExtensions' end
-```
-
-'MyUITestTarget' should be the name of the target for your XCUITests. If
-you're unsure of what your test target is called, you can run
-
-```shell
-$ xcrun xcodebuild -list
-```
-
-to see a list of available targets for your project.
-
-3) Once you have created the `Podfile`, run
-
-```shell
-$ pod install
-```
-
-4) You will probably see a notice from `cocoapods` about closing the
-Xcode project (if currently open) and using `[YOUR_PROJECT_NAME].xcworkspace`
-from now on. Please follow this instruction.
-
-### Carthage
-
-1) First ensure you have `carthage` available by running
+Install carthage with homebrew:
 
 ```shell
 $ brew install carthage
 ```
 
-If you don't have homebrew, you can get it [here](http://brew.sh/).
-
-2) Create a `Cartfile` with the following contents:
+Create a `Cartfile` with the following contents:
 
 ```
-github "xamarinhq/test-cloud-xcuitest-extensions"
+github "xamarinhq/appcenter-test-cloud-xcuitest-extensions"
 ```
 
-3) Follow the [Official Carthage Instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
-for installing frameworks from a Cartfile.
+Follow the [Carthage Instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) for installing frameworks from a Cartfile.
 
-### Building from source
+#### Building From Sources
 
-The build scripts will use the `xcpretty` ruby gem if it is available.
-
-1) Make the VSMobileCenterExtensions.framework
+##### 1. Make the AppCenterXCUITestExtensions.framework
 
 ```shell
 $ make
 ...
-INFO: Installed Products/framework/VSMobileCenterExtensions.framework
+INFO: Installed Products/framework/AppCenterXCUITestExtensions.framework
 INFO: Done!
 ```
 
-2) Copy `VSMobileCenterExtensions.framework` into your application's project folder.
+##### 2. Copy `AppCenterXCUITestExtensions.framework` into your application's project folder.
 
-<img width="574" alt="filestructure"
-src="https://cloud.githubusercontent.com/assets/3009852/22831228/7473bff4-ef5e-11e6-8fb5-7d9ae57e639b.png">
+Use the Finder to drag-and-drop or use `ditto` to perserve symbolic
+links and file attributes.
 
-3) In Xcode, in the 'Build Phases' tab of your _UI Test target_ (not your main
-application target), add the `VSMobileCenterExtensions.framework` in the 'Link
- Binary With Libraries' phase.
+```shell
+$ ditto Products/framework/AppCenterXCUITestExtensions.framework \
+  path/to/MyApp/AppCenterXCUITestExtensions.framework
+```
 
-4) In the same tab, add the `VSMobileCenterExtensions.framework` to your
-'Copy Files' phase.
+<p align="center">
+<img width="720" alt="view-in-finder"
+src="https://user-images.githubusercontent.com/466104/32554526-6e0b800e-c49a-11e7-8b6b-16a36c687fba.png">
+</p>
 
-You may need to create one if you don't already have one. To do so, click the
-'+' sign on the top left of the pane:
+##### 3. Link AppCenterXCUITestExtensions.framework with your XCUITest target
 
-=====
+In Xcode, in the 'Build Phases' tab of the _XCUITest target_ (not the
+main application target), add the
+`AppCenterXCUITestExtensions.framework` in the 'Link Binary With
+Libraries' phase.
 
-<img width="872" alt="addcopyfilesphase" src="https://cloud.githubusercontent.com/assets/3009852/22831259/8ffdf29e-ef5e-11e6-9e17-dfa874082ccf.png">
+In the same tab, add a 'Copy Files' phase with Destination: Frameworks
+and add the `AppCenterXCUITestExtensions.framework`.
 
-====
+Note that your project may already have a 'Copy Files' phase.
 
-Once you have a 'Copy Files' phase, click the '+' button on the bottom left of
-the phase's pane to add a new file.
+<p align="center">
+<img width="720" alt="link-framework"
+src="https://user-images.githubusercontent.com/466104/32555375-d611c918-c49c-11e7-8146-238fa34de4f9.gif">
+</p>
 
-====
+When you are finished, your Build Phases pane should resemble the
+following:
 
-<img width="663" alt="copyfilesphase" src="https://cloud.githubusercontent.com/assets/3009852/22832148/c8fcf010-ef61-11e6-9c8d-5750db12d78e.png">
+<p align="center">
+<img width="720" alt="build-settings"
+src="https://user-images.githubusercontent.com/466104/32555560-653e8b58-c49d-11e7-954f-b5dd62590211.png">
+</p>
 
-====
+#### Cocoapods
 
-Click 'Add Other...' and navigate to the framework:
+If you are not already using CocoaPods, we recommend you use Carthage or
+manually linking the framework.
 
-====
+Update your `Podfile` in your Xcode project folder with the following:
 
-<img width="873" alt="clickaddother" src="https://cloud.githubusercontent.com/assets/3009852/22831280/a2f484b2-ef5e-11e6-9610-8103c4f401ce.png">
+```ruby
+use_frameworks! # required for projects with Swift sources
 
-====
+target 'MyAppUITests' do pod 'AppCenterXCUITestExtensions' end
+```
 
-**Make sure that the 'Copy Files' phase's destination is set to 'Frameworks'.**
+'MyAppUITests' should be the name of the target for your XCUITests.
 
-When you are finished, your Build Phases pane should resemble the following:
+```shell
+$ pod install
+```
 
-<img width="874" alt="buildsettings" src="https://cloud.githubusercontent.com/assets/3009852/22831239/82f297bc-ef5e-11e6-96aa-46b00b2bbd8e.png">
+### Build For Testing
 
-### Usage
-
-* Objective-C [TestApp/Tests/MCLabelTest.m](TestApp/UI/Tests/MCLabelTest.m)
-* Swift [TestApp/Tests/MCLabelTest.swift](TestApp/UI/Tests/MCLabelTest.swift)
-
-### Preparing Your Application Bundles
-
-In order to run a test in Xamarin Test Cloud or Mobile Center, you will
-need to build your application and XCUITest runner bundles. To do this,
-run the following command from the root of your application project
+In order to run a test in App Center or Xamarin Test Cloud, you will
+need to build your application and an XCUITest bundle. To do this, run
+the following command from the root of your application project
 directory:
 
 ```shell
-$ rm -rf ddp #remove the derivedDataPath if it exists
-$ xcrun xcodebuild build-for-testing -configuration Debug -workspace YOUR_WORKSPACE -sdk iphoneos -scheme YOUR_APPLICATION_SCHEME -derivedDataPath ddp
+$ rm -rf DerivedData
+$ xcrun xcodebuild build-for-testing \
+  -configuration Debug \
+  -workspace YOUR_WORKSPACE \
+  -sdk iphoneos \
+  -scheme YOUR_APP_SCHEME \
+  -derivedDataPath DerivedData
 ```
 
-This will build your Application and your XCUITest-Runner into a directory called
-`ddp/Build` (specifically, the bundles are in `ddp/Build/Products/Debug-iphoneos/`).
+This will build your app and an XCUITest bundle into the
+`DerivedData/Build` directory. Your app and XCUITest bundle will be
+located in the `DerivedData/Build/Products/Debug-iphoneos/` directory.
 
 `YOUR_WORKSPACE` should point to a `.xcworkspace` file, likely titled
-`PROJECT_NAME.xcworkspace`. `YOUR_APPLICAITON_SCHEME` should be the
-scheme you use to build your application. By default it is usually the
-name of your application. If you are unsure, you can run
+`PROJECT_NAME.xcworkspace`. `YOUR_APP_SCHEME` should be the scheme you
+use to build your application. By default it is usually the name of your
+application. To see the list of schemes defined in your Xcode project,
+run:
 
 ```shell
 $ xcrun xcodebuild -list
 ```
 
-to see a list of valid schemes. For more information about Xcode schemes, see
-the [Apple Developer Documentation](https://developer.apple.com/library/content/featuredarticles/XcodeConcepts/Concept-Schemes.html).
+For a concrete example of generating an app and an XCUITest bundle, see
+[bin/make/build-for-testing.sh](bin/make/build-for-testing.sh).
 
-#### Uploading Your Tests
+### Run Tests in App Center or Xamarin Test Cloud
 
-First make sure you have the `xtc` uploader tool by following the
-[installation instructions](https://github.com/xamarinhq/test-cloud-appium-java-extensions/blob/master/UploaderInstall.md/#installation).
+#### Run Tests in App Center
 
-If you do not have an existing device key ready, you can generate one by
-following the new test run dialog in [Test Cloud](https://testcloud.xamarin.com).
- On the final screen, extract only the device key from the generated command.
+* [Prepare XCUITest Tests for App Center](https://docs.microsoft.com/en-us/mobile-center/test-cloud/preparing-for-upload/xcuitest)
+* [Run XCUITests in App Center](https://docs.microsoft.com/en-us/mobile-center/test-cloud/starting-a-test-run)
 
-To upload your tests, run the following command:
+For a concrete example of submitting an app to App Center, see
+[bin/make/appcenter.sh](bin/make/appcenter.sh)
 
-```shell
-$ xtc xcuitest <api-key> --devices <selection> --user <email> --workspace ddp/Build/Products/Debug-iphoneos
+#### Run Tests in Xamarin Test Cloud
+
+Install the `xtc` upload tool by following these [instructions](https://github.com/xamarinhq/test-cloud-appium-java-extensions/blob/master/UploaderInstall.md/#installation).
+
+If you have not already created an application record in Xamarin Test
+Cloud, create one now at http://testcloud.xamarin.com.
+
+Collect your Xamarin Test Cloud API Token and generate a device by following
+the links to create a new test run.
+
 ```
+# Follow the instructions in the previous section to build your app
+# and generate an XCUITest bundle.
+$ xcrun xcodebuild build-for-testing [args]
+
+$ /usr/local/bin/xtc xcuitest \
+  XAMARIN_TEST_CLOUD_API_TOKEN \
+  --devices YOUR_DEVICE_SET \
+  --app-name YOUR_APP_NAME \
+  --user YOUR_EMAIL_ADDRESS \
+  --series "master" \
+  --workspace "DerivedData/Build/Products/Debug-iphoneos"
+```
+
+For a concrete example of submitting an app to Xamarin Test Cloud, see
+[bin/make/xtc.sh](bin/make/xtc.sh)
 
 ### Known Issues
 
-#### UI Testing Failure
+### Swift + bitcode
 
-When performing gestures in XTC/Mobile Center Test, you may see an error
-message like the following:
+If you are building Swift XCUITests, you may encounter a build error
+related to bitcode.  As a workaround, you can disable bitcode in your
+XCUITest target. To do this, go to Build Settings, search for
+`ENABLE_BITCODE` and set the value to `NO` for the test target.  You
+should not need to change the setting for the App target.
 
-```
-UI Testing Failure - Failed to scroll to visible (by AX action)
-Button ...  Error -25204 performing AXAction 2003
-```
-
-Presently, the issue not fully understood and believed to originate in
-`XCTest.framework`. However, evidence suggests that one possible cause
-is related to XCUITest not being able to 'see' the element in the
-hierarchy when the gesture is invoked.
-
-While not foolproof, as a potential workaround and general improvement
-to test stability, we recommend adapting the following scaffolding code
-to your gestures invocation (example is for a `tap` gesture):
-
-#### Objective-C
-
-```objc
-- (void)waitAndTap:(XCUIElement *)button {
-   NSPredicate *pred = [NSPredicate predicateWithFormat:@"exists == 1 && hittable == 1"];
-   [self expectationForPredicate:pred evaluatedWithObject:button handler:nil];
-   [self waitForExpectationsWithTimeout:5 /*or a larger value if necessary*/
-                                handler:nil];
-   [button tap];
-}
-```
-
-#### Swift
-
-```swift
-func waitAndTap(element: XCUIElement) {
-    let predicate = NSPredicate(format: "exists == 1 && hittable == 1")
-    expectation(for: predicate, evaluatedWith: element)
-    waitForExpectations(timeout: 5 // Or a larger value if necessary)
-    element.tap()
- }
-```
-
-You would then invoke `waitAndTap` instead of `tap` to ensure that the
-element in question is in a hittable state.
-
-Note that in XTC/Mobile Center Test, this issue appears to only be
-prevelant on iPhone 7 devices.
-
-### Xcode 8.3 and Swift
-
-If you are building Swift XCUITests using Xcode >= 8.3, you may
-encounter a build error related to bitcode.  As a workaround, you can
-disable bitcode in your XCUITest target. To do this, go to Build
-Settings, search for `ENABLE_BITCODE` and set the value to `NO` for the
-test target.  You should not need to change the setting for the App
-target.
-
-<img width="1076" alt="screen shot 2017-04-06 at 12 43 24 pm" src="https://cloud.githubusercontent.com/assets/3009852/24772614/de004eea-1ac6-11e7-975a-bcdfae01d068.png">
+<p align="center">
+<img width="720" alt="screen shot 2017-04-06 at 12 43 24 pm" src="https://cloud.githubusercontent.com/assets/3009852/24772614/de004eea-1ac6-11e7-975a-bcdfae01d068.png">
+</p>

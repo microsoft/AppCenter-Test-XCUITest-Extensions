@@ -1,18 +1,18 @@
 
-#import "MCLaunch.h"
+#import "ACTLaunch.h"
 #import <XCTest/XCTest.h>
 
-@implementation MCLaunch
+@implementation ACTLaunch
 
 + (XCUIApplication *)launch {
     XCUIApplication *application = [[XCUIApplication alloc] init];
-    [MCLaunch turnOffAutomationSession:application];
+    [ACTLaunch turnOffAutomationSession:application];
     [application launch];
     return application;
 }
 
 + (XCUIApplication *)launchApplication:(XCUIApplication *)application {
-    [MCLaunch turnOffAutomationSession:application];
+    [ACTLaunch turnOffAutomationSession:application];
     [application launch];
     return application;
 }
@@ -70,8 +70,8 @@ setSupportAutomationSession:(BOOL)value {
 }
 
 + (void)turnOffAutomationSession:(id)XCUIApplication {
-    id applicationImpl = [MCLaunch XCUIApplicationImpl:XCUIApplication];
-    [MCLaunch XCUIApplicationImpl:applicationImpl
+    id applicationImpl = [ACTLaunch XCUIApplicationImpl:XCUIApplication];
+    [ACTLaunch XCUIApplicationImpl:applicationImpl
       setSupportAutomationSession:NO];
 }
 
