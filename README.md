@@ -9,186 +9,15 @@ screenshot are automatically generated for the test report. You can
 create additional labels and screenshots to track your app's progress
 during a test method.
 
-This framework is _required_ for running XCUITests in App Center and
-Xamarin Test Cloud.
+This framework is _required_ for running XCUITests in Visual Studio App Center and Xamarin Test Cloud.
 
-- [Requirements](#requirements)
-- [Using Labels](#using-labels)
-- [Installation](#installation)
-  - [Carthage](#carthage)
-  - [Building from source](#building-from-sources)
-  - [Cocoapods](#cocoapods)
-- [Build For Testing](#build-for-testing)
-- [Run Tests in App Center or Xamarin Test Cloud](#run-tests-in-app-center-or-xamarin-test-cloud)
-- [Known Issues](#known-issues)
+# Documentation
 
-### Requirements
+Please refer to the official [App Center documentation site](https://docs.microsoft.com/en-us/mobile-center/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud. 
 
-* Xcode >= 9.0
-* Sierra or High Sierra
-* iOS >= 9.0
+For instructions on how to run tests in Xamarin Test Cloud see below. 
 
-You must launch your application using the `ACTLaunch` API.
-
-```
-### Objective-C
-
-XCUIApplication *app = act_launch
-XCUIApplication *app = act_launch_app([[XCUIApplication alloc] init]);
-
-XCUIApplication *app = [ACTLaunch launch];
-XCUIApplication *app = [ACTLaunch launchApplication:[[XCUIApplication alloc] init]];
-
-### Swift
-
-let app = ACTLaunch.launch();
-let app = ACTLaunch.launch(XCUIApplication())
-```
-
-### Using Labels
-
-Be sure that you launch your app with the `ACTLaunch` API. See the
-examples in the [Requirements](#requirements) section.
-
-* Objective-C [TestApp/Tests/UI/ACTLabelTest.m](TestApp/Tests/UI/ACTLabelTest.m)
-* Swift [TestApp/Tests/UI/ACTLabelTest.swift](TestApp/Tests/UI/ACTLabelTest.swift)
-
-### Installation
-
-The extension can be added to your Xcode project using Cocoapods,
-Carthage, or by manually linking the framework to your XCUITest target.
-
-#### Carthage
-
-Install carthage with homebrew:
-
-```shell
-$ brew install carthage
-```
-
-Create a `Cartfile` with the following contents:
-
-```
-github "xamarinhq/appcenter-test-cloud-xcuitest-extensions"
-```
-
-Follow the [Carthage Instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) for installing frameworks from a Cartfile.
-
-#### Building From Sources
-
-##### 1. Make the AppCenterXCUITestExtensions.framework
-
-```shell
-$ make
-...
-INFO: Installed Products/framework/AppCenterXCUITestExtensions.framework
-INFO: Done!
-```
-
-##### 2. Copy `AppCenterXCUITestExtensions.framework` into your application's project folder.
-
-Use the Finder to drag-and-drop or use `ditto` to perserve symbolic
-links and file attributes.
-
-```shell
-$ ditto Products/framework/AppCenterXCUITestExtensions.framework \
-  path/to/MyApp/AppCenterXCUITestExtensions.framework
-```
-
-<p align="center">
-<img width="720" alt="view-in-finder"
-src="https://user-images.githubusercontent.com/466104/32554526-6e0b800e-c49a-11e7-8b6b-16a36c687fba.png">
-</p>
-
-##### 3. Link AppCenterXCUITestExtensions.framework with your XCUITest target
-
-In Xcode, in the 'Build Phases' tab of the _XCUITest target_ (not the
-main application target), add the
-`AppCenterXCUITestExtensions.framework` in the 'Link Binary With
-Libraries' phase.
-
-In the same tab, add a 'Copy Files' phase with Destination: Frameworks
-and add the `AppCenterXCUITestExtensions.framework`.
-
-Note that your project may already have a 'Copy Files' phase.
-
-<p align="center">
-<img width="720" alt="link-framework"
-src="https://user-images.githubusercontent.com/466104/32555375-d611c918-c49c-11e7-8146-238fa34de4f9.gif">
-</p>
-
-When you are finished, your Build Phases pane should resemble the
-following:
-
-<p align="center">
-<img width="720" alt="build-settings"
-src="https://user-images.githubusercontent.com/466104/32555560-653e8b58-c49d-11e7-954f-b5dd62590211.png">
-</p>
-
-#### Cocoapods
-
-If you are not already using CocoaPods, we recommend you use Carthage or
-manually linking the framework.
-
-Update your `Podfile` in your Xcode project folder with the following:
-
-```ruby
-use_frameworks! # required for projects with Swift sources
-
-target 'MyAppUITests' do pod 'AppCenterXCUITestExtensions' end
-```
-
-'MyAppUITests' should be the name of the target for your XCUITests.
-
-```shell
-$ pod install
-```
-
-### Build For Testing
-
-In order to run a test in App Center or Xamarin Test Cloud, you will
-need to build your application and an XCUITest bundle. To do this, run
-the following command from the root of your application project
-directory:
-
-```shell
-$ rm -rf DerivedData
-$ xcrun xcodebuild build-for-testing \
-  -configuration Debug \
-  -workspace YOUR_WORKSPACE \
-  -sdk iphoneos \
-  -scheme YOUR_APP_SCHEME \
-  -derivedDataPath DerivedData
-```
-
-This will build your app and an XCUITest bundle into the
-`DerivedData/Build` directory. Your app and XCUITest bundle will be
-located in the `DerivedData/Build/Products/Debug-iphoneos/` directory.
-
-`YOUR_WORKSPACE` should point to a `.xcworkspace` file, likely titled
-`PROJECT_NAME.xcworkspace`. `YOUR_APP_SCHEME` should be the scheme you
-use to build your application. By default it is usually the name of your
-application. To see the list of schemes defined in your Xcode project,
-run:
-
-```shell
-$ xcrun xcodebuild -list
-```
-
-For a concrete example of generating an app and an XCUITest bundle, see
-[bin/make/build-for-testing.sh](bin/make/build-for-testing.sh).
-
-### Run Tests in App Center or Xamarin Test Cloud
-
-#### Run Tests in App Center
-
-* [Prepare XCUITest Tests for App Center](https://docs.microsoft.com/en-us/mobile-center/test-cloud/preparing-for-upload/xcuitest)
-* [Run XCUITests in App Center](https://docs.microsoft.com/en-us/mobile-center/test-cloud/starting-a-test-run)
-
-For a concrete example of submitting an app to App Center, see
-[bin/make/appcenter.sh](bin/make/appcenter.sh)
-
-#### Run Tests in Xamarin Test Cloud
+# How To Run Tests in Xamarin Test Cloud
 
 Install the `xtc` upload tool by following these [instructions](https://github.com/xamarinhq/test-cloud-appium-java-extensions/blob/master/UploaderInstall.md/#installation).
 
@@ -214,6 +43,20 @@ $ /usr/local/bin/xtc xcuitest \
 
 For a concrete example of submitting an app to Xamarin Test Cloud, see
 [bin/make/xtc.sh](bin/make/xtc.sh)
+
+# Contributing
+
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.microsoft.com.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ### Known Issues
 
