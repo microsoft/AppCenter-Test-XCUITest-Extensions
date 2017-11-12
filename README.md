@@ -13,7 +13,7 @@ This framework is _required_ for running XCUITests in Visual Studio App Center a
 
 # Documentation
 
-Please refer to the official [App Center documentation site](https://docs.microsoft.com/en-us/mobile-center/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud. 
+Please refer to the official [App Center documentation site](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud. 
 
 For instructions on how to run tests in Xamarin Test Cloud see below. 
 
