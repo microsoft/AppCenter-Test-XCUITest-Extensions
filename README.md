@@ -19,7 +19,7 @@ For instructions on how to run tests in Xamarin Test Cloud see below.
 
 # How To Run Tests in Xamarin Test Cloud
 
-Install the `xtc` upload tool by following these [instructions](https://github.com/xamarinhq/test-cloud-appium-java-extensions/blob/master/UploaderInstall.md/#installation).
+Install the `xtc` upload tool by following these [instructions](https://github.com/Microsoft/AppCenter-Test-Appium-Java-Extensions/blob/master/XamarinTestCloudUploaderInstall.md#installation).
 
 If you have not already created an application record in Xamarin Test
 Cloud, create one now at http://testcloud.xamarin.com.
