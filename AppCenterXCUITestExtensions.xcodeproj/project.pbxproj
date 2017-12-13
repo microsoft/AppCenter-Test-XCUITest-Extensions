@@ -15,7 +15,7 @@
 		F52543D21FB32B3800BD517A /* AppCenterXCUITestExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA81E4DE27B0094FCE4 /* AppCenterXCUITestExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F52543D31FB32B3D00BD517A /* ACTLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F556B1691F625FE500F949A6 /* ACTLaunch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F52543D41FB32B4200BD517A /* ACTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 895C8FA61E4DE27B0094FCE4 /* ACTLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F52543D51FB32B4800BD517A /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F52543D51FB32B4800BD517A /* AppCenterXCUITestExtensions-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 893607961E9539F0006F2956 /* AppCenterXCUITestExtensions-Bridging-Header.h */; };
 		F5810D711F6038D800996525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D701F6038D800996525 /* AppDelegate.m */; };
 		F5810D741F6038D800996525 /* CircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D731F6038D800996525 /* CircleController.m */; };
 		F5810D771F6038D800996525 /* SquareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D761F6038D800996525 /* SquareController.m */; };
