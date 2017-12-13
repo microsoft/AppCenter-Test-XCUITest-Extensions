@@ -6,16 +6,16 @@
 and labeling test steps when running XCUITest test in Visual Studio App Center or
 Xamarin Test Cloud. At the conclusion of each test method, a label and
 screenshot are automatically generated for the test report. You can
-create additional labels and screenshots to track your app's progress
+reate additional labels and screenshots to track your app's progress
 during a test method.
 
 This framework is _required_ for running XCUITests in Visual Studio App Center and Xamarin Test Cloud.
 
 # Documentation
 
-Please refer to the official [App Center documentation site](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud. 
+Please refer to the official [App Center documentation site](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud.
 
-For instructions on how to run tests in Xamarin Test Cloud see below. 
+For instructions on how to run tests in Xamarin Test Cloud see below.
 
 # How To Run Tests in Xamarin Test Cloud
 
