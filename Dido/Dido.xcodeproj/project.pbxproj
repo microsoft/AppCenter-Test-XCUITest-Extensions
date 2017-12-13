@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F519C91F1FE1C15100E3C65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F519C91E1FE1C15100E3C65F /* AppDelegate.swift */; };
+		F519C9211FE1C15100E3C65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F519C9201FE1C15100E3C65F /* ViewController.swift */; };
+		F519C9241FE1C15100E3C65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F519C9221FE1C15100E3C65F /* Main.storyboard */; };
+		F519C9261FE1C15100E3C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F519C9251FE1C15100E3C65F /* Assets.xcassets */; };
+		F519C9291FE1C15100E3C65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F519C9271FE1C15100E3C65F /* LaunchScreen.storyboard */; };
+		F5D144251FE1C22B0004BAA3 /* DidoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D144231FE1C22B0004BAA3 /* DidoUITests.swift */; };
+		F5D144331FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D144321FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F519C9301FE1C15100E3C65F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F519C9131FE1C15100E3C65F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F519C91A1FE1C15100E3C65F;
+			remoteInfo = Dido;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F519C91B1FE1C15100E3C65F /* Dido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dido.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F519C91E1FE1C15100E3C65F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; };
+		F519C9201FE1C15100E3C65F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		F519C9231FE1C15100E3C65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F519C9251FE1C15100E3C65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F519C9281FE1C15100E3C65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F519C92A1FE1C15100E3C65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F519C92F1FE1C15100E3C65F /* DidoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DidoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D144231FE1C22B0004BAA3 /* DidoUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DidoUITests.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		F5D144241FE1C22B0004BAA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D144321FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F519C9181FE1C15100E3C65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F519C92C1FE1C15100E3C65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D144331FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F519C9121FE1C15100E3C65F = {
+			isa = PBXGroup;
+			children = (
+				F5D144271FE1C2AE0004BAA3 /* App */,
+				F5D144211FE1C22B0004BAA3 /* Tests */,
+				F519C91C1FE1C15100E3C65F /* Products */,
+				F5D144311FE1C74E0004BAA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F519C91C1FE1C15100E3C65F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F519C91B1FE1C15100E3C65F /* Dido.app */,
+				F519C92F1FE1C15100E3C65F /* DidoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D144211FE1C22B0004BAA3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D144221FE1C22B0004BAA3 /* UI */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F5D144221FE1C22B0004BAA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F5D144231FE1C22B0004BAA3 /* DidoUITests.swift */,
+				F5D144241FE1C22B0004BAA3 /* Info.plist */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F5D144271FE1C2AE0004BAA3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F519C91E1FE1C15100E3C65F /* AppDelegate.swift */,
+				F519C9201FE1C15100E3C65F /* ViewController.swift */,
+				F519C9221FE1C15100E3C65F /* Main.storyboard */,
+				F519C9251FE1C15100E3C65F /* Assets.xcassets */,
+				F519C9271FE1C15100E3C65F /* LaunchScreen.storyboard */,
+				F519C92A1FE1C15100E3C65F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5D144311FE1C74E0004BAA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D144321FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F519C91A1FE1C15100E3C65F /* Dido */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F519C9381FE1C15100E3C65F /* Build configuration list for PBXNativeTarget "Dido" */;
+			buildPhases = (
+				F519C9171FE1C15100E3C65F /* Sources */,
+				F519C9181FE1C15100E3C65F /* Frameworks */,
+				F519C9191FE1C15100E3C65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dido;
+			productName = Dido;
+			productReference = F519C91B1FE1C15100E3C65F /* Dido.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F519C92E1FE1C15100E3C65F /* DidoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F519C93B1FE1C15100E3C65F /* Build configuration list for PBXNativeTarget "DidoUITests" */;
+			buildPhases = (
+				F519C92B1FE1C15100E3C65F /* Sources */,
+				F519C92C1FE1C15100E3C65F /* Frameworks */,
+				F519C92D1FE1C15100E3C65F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F519C9311FE1C15100E3C65F /* PBXTargetDependency */,
+			);
+			name = DidoUITests;
+			productName = DidoUITests;
+			productReference = F519C92F1FE1C15100E3C65F /* DidoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F519C9131FE1C15100E3C65F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					F519C91A1FE1C15100E3C65F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					F519C92E1FE1C15100E3C65F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = F519C91A1FE1C15100E3C65F;
+					};
+				};
+			};
+			buildConfigurationList = F519C9161FE1C15100E3C65F /* Build configuration list for PBXProject "Dido" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F519C9121FE1C15100E3C65F;
+			productRefGroup = F519C91C1FE1C15100E3C65F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F519C91A1FE1C15100E3C65F /* Dido */,
+				F519C92E1FE1C15100E3C65F /* DidoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F519C9191FE1C15100E3C65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F519C9291FE1C15100E3C65F /* LaunchScreen.storyboard in Resources */,
+				F519C9261FE1C15100E3C65F /* Assets.xcassets in Resources */,
+				F519C9241FE1C15100E3C65F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F519C92D1FE1C15100E3C65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F519C9171FE1C15100E3C65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F519C9211FE1C15100E3C65F /* ViewController.swift in Sources */,
+				F519C91F1FE1C15100E3C65F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F519C92B1FE1C15100E3C65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D144251FE1C22B0004BAA3 /* DidoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F519C9311FE1C15100E3C65F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F519C91A1FE1C15100E3C65F /* Dido */;
+			targetProxy = F519C9301FE1C15100E3C65F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F519C9221FE1C15100E3C65F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F519C9231FE1C15100E3C65F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F519C9271FE1C15100E3C65F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F519C9281FE1C15100E3C65F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F519C9361FE1C15100E3C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F519C9371FE1C15100E3C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F519C9391FE1C15100E3C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DidoAppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft-appcenter.Dido";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6c51ccd-3835-4cea-bfca-c16fe296ff86";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F519C93A1FE1C15100E3C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = DidoAppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft-appcenter.Dido";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6c51ccd-3835-4cea-bfca-c16fe296ff86";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F519C93C1FE1C15100E3C65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft-appcenter.DidoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6c51ccd-3835-4cea-bfca-c16fe296ff86";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dido;
+			};
+			name = Debug;
+		};
+		F519C93D1FE1C15100E3C65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FYD86LA7RE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/UI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft-appcenter.DidoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6c51ccd-3835-4cea-bfca-c16fe296ff86";
+				PROVISIONING_PROFILE_SPECIFIER = MicrosoftAppCenterWildcardDevelopment;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dido;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F519C9161FE1C15100E3C65F /* Build configuration list for PBXProject "Dido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F519C9361FE1C15100E3C65F /* Debug */,
+				F519C9371FE1C15100E3C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F519C9381FE1C15100E3C65F /* Build configuration list for PBXNativeTarget "Dido" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F519C9391FE1C15100E3C65F /* Debug */,
+				F519C93A1FE1C15100E3C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F519C93B1FE1C15100E3C65F /* Build configuration list for PBXNativeTarget "DidoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F519C93C1FE1C15100E3C65F /* Debug */,
+				F519C93D1FE1C15100E3C65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F519C9131FE1C15100E3C65F /* Project object */;
+}

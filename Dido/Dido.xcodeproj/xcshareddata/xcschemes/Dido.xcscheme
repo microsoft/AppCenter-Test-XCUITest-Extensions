@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "897934C61E4CD03300546131"
-               BuildableName = "AppCenterXCUITestExtensions.framework"
-               BlueprintName = "AppCenterXCUITestExtensions"
-               ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
+               BlueprintIdentifier = "F519C91A1FE1C15100E3C65F"
+               BuildableName = "Dido.app"
+               BlueprintName = "Dido"
+               ReferencedContainer = "container:Dido.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F519C92E1FE1C15100E3C65F"
+               BuildableName = "DidoUITests.xctest"
+               BlueprintName = "DidoUITests"
+               ReferencedContainer = "container:Dido.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F519C91A1FE1C15100E3C65F"
+            BuildableName = "Dido.app"
+            BlueprintName = "Dido"
+            ReferencedContainer = "container:Dido.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -44,15 +63,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "897934C61E4CD03300546131"
-            BuildableName = "AppCenterXCUITestExtensions.framework"
-            BlueprintName = "AppCenterXCUITestExtensions"
-            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
+            BlueprintIdentifier = "F519C91A1FE1C15100E3C65F"
+            BuildableName = "Dido.app"
+            BlueprintName = "Dido"
+            ReferencedContainer = "container:Dido.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -62,15 +82,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "897934C61E4CD03300546131"
-            BuildableName = "AppCenterXCUITestExtensions.framework"
-            BlueprintName = "AppCenterXCUITestExtensions"
-            ReferencedContainer = "container:AppCenterXCUITestExtensions.xcodeproj">
+            BlueprintIdentifier = "F519C91A1FE1C15100E3C65F"
+            BuildableName = "Dido.app"
+            BlueprintName = "Dido"
+            ReferencedContainer = "container:Dido.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

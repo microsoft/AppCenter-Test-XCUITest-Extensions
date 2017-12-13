@@ -256,8 +256,8 @@
 		897934BE1E4CD03300546131 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Microsoft;
 				TargetAttributes = {
 					897934C61E4CD03300546131 = {
