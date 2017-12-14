@@ -1,0 +1,8 @@
+
+use_frameworks!
+
+platform :ios, "9.0"
+
+target 'BeetItUITests' do
+  pod 'AppCenterXCUITestExtensions'
+end

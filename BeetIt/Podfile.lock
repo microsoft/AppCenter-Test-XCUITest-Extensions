@@ -1,0 +1,12 @@
+PODS:
+  - AppCenterXCUITestExtensions (1.0.0)
+
+DEPENDENCIES:
+  - AppCenterXCUITestExtensions
+
+SPEC CHECKSUMS:
+  AppCenterXCUITestExtensions: 8825ed941664fa21d6740a5ed6928a84c06623ac
+
+PODFILE CHECKSUM: 22279dec01f0233a9fbc3a0c96a40aaeed4ace2d
+
+COCOAPODS: 1.3.1
