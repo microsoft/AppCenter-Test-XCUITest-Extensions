@@ -3,17 +3,27 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 `AppCenterXCUITestExtensions` is an iOS Framework for taking screenshots
-and labeling test steps when running XCUITest test in Visual Studio App Center or
-Xamarin Test Cloud. At the conclusion of each test method, a label and
-screenshot are automatically generated for the test report. You can
-reate additional labels and screenshots to track your app's progress
-during a test method.
+and labeling test steps when running XCUITest test in Visual Studio App Center
+or Xamarin Test Cloud. At the conclusion of each test method, a label and
+screenshot are automatically generated for the test report. You can create
+additional labels and screenshots to track your app's progress during a test
+method.
 
-This framework is _required_ for running XCUITests in Visual Studio App Center and Xamarin Test Cloud.
+This framework is _required_ for running XCUITests in Visual Studio App Center
+and Xamarin Test Cloud.
 
 # Documentation
 
-Please refer to the official [App Center documentation site](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xcuitest) for installation and usage for both Visual Studio App Center and Xamarin Test Cloud.
+Please refer to the official [App Center documentation site](https://docs.microsoft.com/appcenter/test-cloud/preparing-for-upload/xcuitest)
+for installation and usage for both Visual Studio App Center and Xamarin Test
+Cloud.
+
+This repository contains four demonstration apps:
+
+* Flowers: demonstrates the API.
+* Dido: demonstrates how to the link the framework using Carthage.
+* BeetIt: demonstrates how to link the framework using CocoaPods.
+* StickShift: demonstrates how to manually link the framework.
 
 For instructions on how to run tests in Xamarin Test Cloud see below.
 

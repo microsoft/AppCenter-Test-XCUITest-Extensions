@@ -12,6 +12,7 @@ bin/xtc
 build/
 DerivedData/
 Products/
+Dido/Carthage/Checkouts
 
 ## Various settings
 *.pbxuser
