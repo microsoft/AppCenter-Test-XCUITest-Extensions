@@ -36,7 +36,7 @@ else
   rm -rf bin/xtc
   rm -rf bin/xtc.tar.gz
   curl -o bin/xtc.tar.gz \
-    http://calabash-ci.macminicolo.net:8080/view/Uploader/job/Uploader%20master/lastSuccessfulBuild/artifact/publish/Release/xtc.osx.10.10-x64.tar.gz
+    http://calabash-ci.xyz:8080/view/Uploader/job/Uploader%20master/lastSuccessfulBuild/artifact/publish/Release/xtc.osx.10.10-x64.tar.gz
   $(cd bin; tar -xzf xtc.tar.gz)
   rm -rf bin/xtc.tar.gz
   info "Installed bin/xtc/xtc"
