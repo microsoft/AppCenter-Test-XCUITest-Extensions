@@ -59,7 +59,7 @@ xcrun xcodebuild \
   -derivedDataPath "${BUILD_DIR}" \
   -configuration Release \
   -sdk "${PLATFORM}" \
-  -scheme "UI Tests" \
+  -scheme "Flowers-UITests" \
   -destination id=${UDID}\
   test | $XC_PIPE
 
