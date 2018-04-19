@@ -1,10 +1,34 @@
 #!/usr/bin/env bash
 
+set -e
+
 source "bin/log.sh"
 source "bin/xcode.sh"
 
+if [ "$(uname)" != "Darwin" ]; then
+  error "This script requires macOS"
+  exit 1
+fi
+
 if [ -z ${1} ]; then
-  echo "Usage: ${0} device-set"
+  echo "Usage: ${0} device-set
+
+This script responds to the following environment variables:
+
+SERIES: the test series; the default series is 'master'"
+  exit 65
+fi
+
+hash npm 2>/dev/null
+if [ $? -eq 0 ]; then
+  info "Using npm $(npm -version)"
+else
+  error "appcenter cli is not installed"
+  error ""
+  error "$ brew update; brew install npm"
+  error "$ npm install -g appcenter-cli"
+  error ""
+  error "Then try again"
   exit 1
 fi
 
@@ -14,10 +38,10 @@ if [ $? -eq 0 ]; then
 else
   error "appcenter cli is not installed"
   error ""
-  error "$ brew update; brew install npm"
   error "$ npm install -g appcenter-cli"
   error ""
   error "Then try again"
+  exit 1
 fi
 
 CREDS=.appcenter-credentials
@@ -31,7 +55,7 @@ EOF
   cat ${CREDS}
   error "Create a token by running:"
   error ""
-  error "$ mobile-center login"
+  error "$ appcenter login"
   error ""
   error "and following the instructions."
   error ""
