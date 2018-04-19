@@ -1,10 +1,6 @@
 ## macOS
 .DS_Store
 
-## For Test Cloud uploads
-.xtc-credentials
-bin/xtc
-
 ## For AppCenter uploads
 .appcenter-credentials
 

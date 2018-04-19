@@ -25,34 +25,9 @@ This repository contains four demonstration apps:
 * BeetIt: demonstrates how to link the framework using CocoaPods.
 * StickShift: demonstrates how to manually link the framework.
 
-For instructions on how to run tests in Xamarin Test Cloud see below.
 
-# How To Run Tests in Xamarin Test Cloud
-
-Install the `xtc` upload tool by following these [instructions](https://github.com/Microsoft/AppCenter-Test-Appium-Java-Extensions/blob/master/XamarinTestCloudUploaderInstall.md#installation).
-
-If you have not already created an application record in Xamarin Test
-Cloud, create one now at http://testcloud.xamarin.com.
-
-Collect your Xamarin Test Cloud API Token and generate a device by following
-the links to create a new test run.
-
-```
-# Follow the instructions in the previous section to build your app
-# and generate an XCUITest bundle.
-$ xcrun xcodebuild build-for-testing [args]
-
-$ /usr/local/bin/xtc xcuitest \
-  XAMARIN_TEST_CLOUD_API_TOKEN \
-  --devices YOUR_DEVICE_SET \
-  --app-name YOUR_APP_NAME \
-  --user YOUR_EMAIL_ADDRESS \
-  --series "master" \
-  --workspace "DerivedData/Build/Products/Debug-iphoneos"
-```
-
-For a concrete example of submitting an app to Xamarin Test Cloud, see
-[bin/make/xtc.sh](bin/make/xtc.sh)
+For a concrete example of submitting an app to App Center see
+[bin/make/appcenter.sh](bin/make/appcenter.sh)
 
 # Contributing
 
