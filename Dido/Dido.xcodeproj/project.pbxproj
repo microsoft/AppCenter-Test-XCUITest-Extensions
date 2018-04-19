@@ -12,6 +12,7 @@
 		F519C9241FE1C15100E3C65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F519C9221FE1C15100E3C65F /* Main.storyboard */; };
 		F519C9261FE1C15100E3C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F519C9251FE1C15100E3C65F /* Assets.xcassets */; };
 		F519C9291FE1C15100E3C65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F519C9271FE1C15100E3C65F /* LaunchScreen.storyboard */; };
+		F55552262088666000028A6B /* AppCenterXCUITestExtensions.framework in Copy Files  AppCenter XCUITest Extension */ = {isa = PBXBuildFile; fileRef = F5D144321FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5D144251FE1C22B0004BAA3 /* DidoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D144231FE1C22B0004BAA3 /* DidoUITests.swift */; };
 		F5D144331FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D144321FE1C74F0004BAA3 /* AppCenterXCUITestExtensions.framework */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,20 @@
 			remoteInfo = Dido;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F55552252088665400028A6B /* Copy Files  AppCenter XCUITest Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F55552262088666000028A6B /* AppCenterXCUITestExtensions.framework in Copy Files  AppCenter XCUITest Extension */,
+			);
+			name = "Copy Files  AppCenter XCUITest Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F519C91B1FE1C15100E3C65F /* Dido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dido.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +158,7 @@
 				F519C92B1FE1C15100E3C65F /* Sources */,
 				F519C92C1FE1C15100E3C65F /* Frameworks */,
 				F519C92D1FE1C15100E3C65F /* Resources */,
+				F55552252088665400028A6B /* Copy Files  AppCenter XCUITest Extension */,
 			);
 			buildRules = (
 			);
