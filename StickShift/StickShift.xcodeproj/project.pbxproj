@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F51AC1E81FE1D87600AA8DDC /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51AC1E71FE1D87600AA8DDC /* AppCenterXCUITestExtensions.framework */; };
-		F51AC1EB1FE1D9F700AA8DDC /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F51AC1E71FE1D87600AA8DDC /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5F8FFA01FE1D4180053FF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8FF9F1FE1D4180053FF0E /* AppDelegate.swift */; };
 		F5F8FFA21FE1D4180053FF0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8FFA11FE1D4180053FF0E /* ViewController.swift */; };
 		F5F8FFA51FE1D4180053FF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F8FFA31FE1D4180053FF0E /* Main.storyboard */; };
@@ -34,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F51AC1EB1FE1D9F700AA8DDC /* AppCenterXCUITestExtensions.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51AC1E81FE1D87600AA8DDC /* AppCenterXCUITestExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -380,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
