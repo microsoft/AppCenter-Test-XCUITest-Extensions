@@ -68,7 +68,9 @@ find "${TEST_DIR}/Attachments" -type f -name "*.png" -o -name "*.jpg" | \
   wc -l | tr -d '[:space:]'
 )
 
-if [ "$(xcode_gte_9)" = "true" ]; then
+if [ "$(xcode_gte_9_4)" = "true" ]; then
+  EXPECTED="64"
+elif [ "$(xcode_gte_9)" = "true" ]; then
   EXPECTED="67"
 else
   EXPECTED="60"

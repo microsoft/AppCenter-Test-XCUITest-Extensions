@@ -17,6 +17,17 @@ function xcode_gte_9 {
   fi
 }
 
+function xcode_gte_9_4 {
+  local version=$(xcode_version)
+  local major=$(echo $version | cut -d. -f1)
+  local minor=$(echo $version | cut -d. -f2)
+  if [ "${major}" \> "9" -o "${major}" = "9" ] && [ "${minor}" = "4" ]; then
+    echo -n "true"
+  else
+    echo -n "false"
+  fi
+}
+
 function simulator_app_path {
   if [ "${DEVELOPER_DIR}" = "" ]; then
     local dev_dir=$(xcode-select --print-path)
