@@ -14,10 +14,15 @@ class ACTLabelTest: XCTestCase {
         XCUIApplication().terminate()
     }
 
-    func testMCLabelClassMethodWithSwift() {
+    func testACTLabelClassMethodWithSwift() {
         ACTLabel.labelStep("Given the app has launched")
         ACTLabel.labelStep("Then I %@ the %@ button %@ times",
                           args: getVaList(["touch", "red", "3"]))
+        XCTAssert(true, "This test should always pass");
+    }
+
+    func testACTScreenshotter() {
+        ACTScreenshotter.screenshotWithTitle(title: "screenshot");
         XCTAssert(true, "This test should always pass");
     }
 }
