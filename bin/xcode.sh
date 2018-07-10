@@ -10,7 +10,7 @@ function xcode_version {
 function xcode_gte_9 {
   local version=$(xcode_version)
   local major=$(echo $version | cut -d. -f1)
-  if [ "${major}" \> "9" -o "${major}" = "9" ]; then
+  if (( ${major} >= 9 )); then
     echo -n "true"
   else
     echo -n "false"
@@ -20,8 +20,24 @@ function xcode_gte_9 {
 function xcode_gte_9_4 {
   local version=$(xcode_version)
   local major=$(echo $version | cut -d. -f1)
-  local minor=$(echo $version | cut -d. -f2)
-  if [ "${major}" \> "9" -o "${major}" = "9" ] && [ "${minor}" = "4" ]; then
+  if (( ${major} > 9 )); then
+    echo -n "true"
+  elif (( ${major} < 9 )); then
+    echo -n "false"
+  else
+    local minor=$(echo $version | cut -d. -f2)
+    if (( ${minor} >= 4 )); then
+      echo -n "true"
+    else
+      echo -n "false"
+    fi
+  fi
+}
+
+function xcode_gte_10 {
+  local version=$(xcode_version)
+  local major=$(echo $version | cut -d. -f1)
+  if (( ${major} >= 10 )); then
     echo -n "true"
   else
     echo -n "false"
