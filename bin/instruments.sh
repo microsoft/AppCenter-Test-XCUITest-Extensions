@@ -5,8 +5,19 @@ source bin/xcode.sh
 function default_sim_udid {
   if [ $(xcode_gte_9) = "true" ]; then
     local version=$(xcode_version)
+    local major=$(echo $version | cut -d. -f1)
     local minor=$(echo $version | cut -d. -f2)
-    local name="iPhone 7 (11.${minor})"
+
+    # This branch can be removed when Apple releases an Xcode
+    # with iPhone 9
+    if (( $major == 10 )); then
+      local model_mod=2
+    else
+      local model_mod=1
+    fi
+
+    # For example: iPhone 8 (11.4)
+    local name="iPhone $(( ${major} - ${model_mod} )) ($(( ${major} + 2 )).${minor})"
   else
     local name="iPhone 7 (10.3.1)"
   fi

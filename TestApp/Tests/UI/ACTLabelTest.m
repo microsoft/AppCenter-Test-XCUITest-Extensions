@@ -1,6 +1,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AppCenterXCUITestExtensions.h"
+#import "ACTScreenshotter.h"
 
 @interface ACTLabelTest : XCTestCase
 
@@ -54,6 +55,11 @@
 
     XCTAssertNotNil(self.app.images[@"flowers-in-circle"]);
     act_label(@"Then I see the flowers in a circle");
+}
+
+- (void)testScreenshotter {
+    [ACTScreenshotter screenshotWithTitle:@"screenshot"];
+    XCTAssert(true, "This test should always pass");
 }
 
 @end

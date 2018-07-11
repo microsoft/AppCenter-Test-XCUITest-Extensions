@@ -34,8 +34,6 @@ fi
 info "Will pipe xcodebuild to ${XC_PIPE}"
 
 if [ "${1}" = "x86" ]; then
-  osascript -e 'quit app "Simulator"'
-  info "Quitting the Simulator.app"
   open -g -a "$(simulator_app_path)" --args -CurrentDeviceUDID $UDID
   info "Launching the target simulator"
   sleep 5
@@ -43,10 +41,13 @@ fi
 
 BUILD_DIR=build/Flowers-UITests
 TEST_DIR="${BUILD_DIR}/Logs/Test"
+ATTACH_DIR="${TEST_DIR}/Attachments"
 
-if [ -d "${TEST_DIR}/Attachments" ]; then
-  find "${TEST_DIR}/Attachments" -type f -name "*.png" -print0 | xargs -0 rm
-  find "${TEST_DIR}/Attachments" -type f -name "*.jpg" -print0 | xargs -0 rm
+# Before Xcode 10, attachments from all tests lived in one directory.
+# After Xcode 10, attachments appear _under_ the current .xcresult directory.
+if [ -d "${ATTACH_DIR}" ]; then
+  find "${ATTACH_DIR}" -type f -name "*.png" -print0 | xargs -0 rm
+  find "${TEST_DIR}" -type f -name "*.jpg" -print0 | xargs -0 rm
   info "Deleted existing screenshots"
 fi
 
@@ -62,16 +63,25 @@ xcrun xcodebuild \
   -destination id=${UDID}\
   test | $XC_PIPE
 
-SCREENSHOTS=$(
-find "${TEST_DIR}/Attachments" -type f -name "*.png" -o -name "*.jpg" | \
-  wc -l | tr -d '[:space:]'
-)
+if [ "$(xcode_gte_10)" = "true" ]; then
+  DIR=$(find ${TEST_DIR} -name "*.xcresult" -mindepth 1 -maxdepth 1 -type d | sort -n -r | head -1)
+  SCREENSHOTS=$(
+  find "${DIR}/Attachments" -type f -name "*.png" -o -name "*.jpg" | \
+    wc -l | tr -d '[:space:]'
+      )
+else
+  SCREENSHOTS=$(
+  find "${ATTACH_DIR}" -type f -name "*.png" -o -name "*.jpg" | \
+    wc -l | tr -d '[:space:]'
+      )
+fi
 
 if [ "$(xcode_gte_9_4)" = "true" ]; then
-  EXPECTED="64"
+  EXPECTED="74"
 elif [ "$(xcode_gte_9)" = "true" ]; then
-  EXPECTED="67"
+  EXPECTED="77"
 else
+  # Soon to be unsupported.
   EXPECTED="60"
 fi
 
