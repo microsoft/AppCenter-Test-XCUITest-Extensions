@@ -9,8 +9,54 @@ screenshot are automatically generated for the test report. You can create
 additional labels and screenshots to track your app's progress during a test
 method.
 
-This framework is _required_ for running XCUITests in Visual Studio App Center
-and Xamarin Test Cloud.
+## Update
+
+This framework has been _deprecated_.
+
+This framework is _no longer required_ for running XCUITests in Visual Studio
+App Center.
+
+We will not be updating this repository to be compatible newer versions of
+Xcode 10.  We expect this framework to work until at least Xcode 10.3.
+
+Users need to migrate their tests to use Apple's
+`XCTContext runActivityNamed:block` API.
+
+```
+- (void)testFavoriteSongs {
+  [XCTContext runActivityNamed:@"Then I touch the Library tab" block:^(id<XCTActivity>
+                                                                      _Nonnull activity) {
+    // Gestures always generate a screenshot which will appear in your test report.
+    [self.app.buttons[@"Library"] tap];
+  }];
+
+  [XCTContext runActivityNamed:@"Then I see a list of my favorite songs" block:^(id<XCTActivity>
+                                                                                 _Nonnull activity) {
+    // Queries do not generate screenshots.
+    // Take a screenshot before assertions to make your test report more readable.
+    XCUIScreenshot *screenshot = [[XCUIScreen mainScreen] screenshot];
+    XCTAttachment *attachment = [XCTAttachment attachmentWithScreenshot:screenshot];
+    [attachment setLifetime:XCTAttachmentLifetimeKeepAlways];
+    [activity addAttachment:attachment];
+    XCTAssertNotNil(self.app.tables[@"favorite Songs"]);
+  }];
+}
+```
+
+To make test source code readable, we recommend this method to take screenshots:
+
+```
+- (void) addScreenshot:(id<XCTActivity>  _Nonnull ) activity {
+  XCUIScreenshot *screenshot = [[XCUIScreen mainScreen] screenshot];
+  XCTAttachment *attachment;
+  attachment = [XCTAttachment attachmentWithScreenshot:screenshot];
+  [attachment setLifetime:XCTAttachmentLifetimeKeepAlways];
+  [activity addAttachment:attachment];
+}
+```
+
+We recommend inserting screenshots during your tests to make the test report
+easier to interrept.
 
 # Documentation
 
