@@ -11,13 +11,12 @@ method.
 
 ## Update
 
-This framework has been _deprecated_.
+This framework has been _deprecated_. 
+
+This framework is _not_ compatibible with Xcode >= 10.2.
 
 This framework is _no longer required_ for running XCUITests in Visual Studio
 App Center.
-
-We will not be updating this repository to be compatible newer versions of
-Xcode 10.  We expect this framework to work until at least Xcode 10.3.
 
 Users need to migrate their tests to use Apple's
 `XCTContext runActivityNamed:block` API.
